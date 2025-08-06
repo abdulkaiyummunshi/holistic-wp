@@ -26917,10 +26917,13 @@ header.sticky {
             .blog-area .blog-details-wrapper .single-post-item .default-single-post-meta .blog-post-tag .post-tag-list a svg path {
               fill: #00AF78; }
     .blog-area .blog-details-wrapper .single-post-item.format-image .post-thumbnail {
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      max-height: 501px; }
       .blog-area .blog-details-wrapper .single-post-item.format-image .post-thumbnail img {
         border-radius: 20px;
-        width: 100%; }
+        width: 100%;
+        height: 501px;
+        object-fit: cover; }
     .blog-area .blog-details-wrapper .single-post-item.single-video-post .post-video {
       position: relative; }
       .blog-area .blog-details-wrapper .single-post-item.single-video-post .post-video img {

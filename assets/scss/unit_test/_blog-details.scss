@@ -1074,9 +1074,12 @@
         &.format-image {    
           .post-thumbnail {
             margin-bottom: 20px;
+            max-height: 501px;
             img {
               border-radius: 20px;
               width: 100%;
+              height: 501px;
+              object-fit: cover;
             }
           }
         }
