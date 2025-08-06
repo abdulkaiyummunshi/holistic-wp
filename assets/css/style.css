@@ -50,6 +50,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400..700&display=swap");
 /*
 
+#pagination-wrapper {
+  margin-top: 80px; }
+  #pagination-wrapper ul {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center; }
+    #pagination-wrapper ul li:nth-child(1) span {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      background: transparent;
+      border: 1px solid #E4E4E4;
+      border-radius: 50%;
+      font-weight: 500;
+      font-size: 18px;
+      color: #111111; }
+      #pagination-wrapper ul li:nth-child(1) span:hover {
+        background-color: #00AF78;
+        color: #fff; }
+  #pagination-wrapper a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background: transparent;
+    border: 1px solid #E4E4E4;
+    border-radius: 50%;
+    font-weight: 500;
+    font-size: 18px;
+    color: #111111; }
+    #pagination-wrapper a:hover {
+      background-color: #00AF78;
+      color: #fff; }
+  
+  #pagination-wrapper ul li:last-child a{
+    color: #00af78;
+  }
 
 */
 /*----------------------------------------*/
