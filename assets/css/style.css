@@ -28839,6 +28839,9 @@ ul.children {
       .inner_hero .heading_menu ul li a:hover {
         color: #00AF78; }
 
+.listing-item-hc-content .location {
+  margin-bottom: 0px !important; }
+
 .listing_menu {
   border: 1px solid #E4E4E4;
   padding: 4px 30px;
