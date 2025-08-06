@@ -52,7 +52,7 @@
         position: relative;
         .vector{
             position: absolute;
-            top: 48%;
+            top: -9%;
             left: 59%;
             @include transform(-50%, -50%);
             pointer-events: none;
