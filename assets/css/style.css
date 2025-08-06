@@ -28846,6 +28846,14 @@ ul.children {
 
 .listing-item-hc-content {
   padding: 20px 15px 20px !important; }
+  .listing-item-hc-content .title-stars {
+    align-items: flex-start !important; }
+    .listing-item-hc-content .title-stars h4 {
+      width: 64% !important;
+      line-height: 29px; }
+    .listing-item-hc-content .title-stars .stars {
+      width: 35% !important;
+      font-size: 16px !important; }
 
 .listing_menu_hc_btn button {
   line-height: 36px !important; }
@@ -28877,7 +28885,7 @@ ul.children {
     .listing_menu .listing_menu_btn button {
       width: 40px;
       height: 40px;
-      line-height: 34px !important;
+      line-height: 34px;
       border: none !important;
       background-color: #f9f9f9;
       border-radius: 10px;

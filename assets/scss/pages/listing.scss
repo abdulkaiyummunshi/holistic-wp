@@ -96,6 +96,17 @@
 }
 .listing-item-hc-content{
     padding: 20px 15px 20px !important;
+    .title-stars{
+        align-items: flex-start !important;
+        h4{
+            width: 64% !important;
+            line-height: 29px;
+        }
+        .stars{
+            width: 35% !important;
+            font-size: 16px !important;
+        }
+    }
 }
 .listing_menu_hc_btn{
     button{
