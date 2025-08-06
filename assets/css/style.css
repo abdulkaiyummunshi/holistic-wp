@@ -30187,6 +30187,9 @@ ul.children {
     .service_details_area .service_contains .list_area ul li span {
       margin-right: 15px;
       color: #00AF78; }
+    .service_details_area .service_contains .list_area ul li i {
+      margin-right: 15px;
+      color: #00AF78; }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .send_message_area .row {
