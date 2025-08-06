@@ -25740,7 +25740,8 @@ header.sticky {
     max-height: 0px;
     overflow: hidden;
     transition: max-height 0.4s ease-in-out;
-    transition: all 0.3s ease-in-out; }
+    transition: all 0.3s ease-in-out;
+    margin: 0px !important; }
     @media only screen and (min-width: 0px) and (max-width: 767px) {
       .faq .answer {
         padding-left: 10px; } }
@@ -30082,6 +30083,8 @@ ul.children {
       .service_details_area .sidebar .categoriy_widget ul li {
         padding: 0px;
         width: 100%; }
+        .service_details_area .sidebar .categoriy_widget ul li.active span {
+          color: #fff; }
         .service_details_area .sidebar .categoriy_widget ul li a {
           border: 1px solid #00AF78;
           border-radius: 30px;

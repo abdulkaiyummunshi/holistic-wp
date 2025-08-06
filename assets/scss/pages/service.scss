@@ -26,6 +26,11 @@
                 li{
                 padding: 0px;
                     width: 100%;
+                    &.active{
+                        span{
+                            color: $white;
+                        }
+                    }
                     a{
                         border: 1px solid $primary;
                         border-radius: 30px;
