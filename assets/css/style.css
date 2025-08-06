@@ -29952,6 +29952,9 @@ ul.children {
     .select_location .nice-select .list {
       width: fit-content; }
 
+.top_category .listing-category-filter li a {
+  padding: 13px 30px !important; }
+
 .our_mission_area .mission_content b {
   font-weight: 500;
   font-size: 18px;
