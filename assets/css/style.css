@@ -28841,6 +28841,9 @@ ul.children {
       .inner_hero .heading_menu ul li a:hover {
         color: #00AF78; }
 
+listing_details_area_hc .sidebar .top_category ul li a {
+  padding: 12px 30px !important; }
+
 .listing-item-hc-content .location {
   margin-bottom: 0px !important; }
 
