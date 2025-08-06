@@ -27853,6 +27853,8 @@ header.sticky {
 ul.children {
   list-style: none; }
 
+.blog-area .widget_holistic_blog_search_widget {
+  margin: 0px !important; }
 .blog-area .sidebar .widge {
   box-shadow: 0 20px 80px 0 rgba(8, 8, 8, 0.05);
   background-color: #fff;
@@ -27896,7 +27898,6 @@ ul.children {
     position: relative;
     border: 1px solid #E4E4E4;
     background: #fff;
-    padding: 12px 30px;
     outline: none;
     border-radius: 999px;
     -moz-border-radius: 999px;
@@ -28108,7 +28109,6 @@ ul.children {
     padding: 0 20px;
     position: relative;
     right: 0;
-    background-color: #00AF78;
     top: 0;
     height: auto;
     line-height: 0;
