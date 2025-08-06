@@ -24230,7 +24230,7 @@ header.sticky {
     font-size: 17px;
     color: #111111;
     margin-bottom: 0px;
-    background-color: red; }
+    background-color: red !important; }
   .banner-search-container .nice-select {
     height: 48px;
     border: none;
