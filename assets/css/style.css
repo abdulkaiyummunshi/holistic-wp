@@ -25575,7 +25575,7 @@ header.sticky {
     position: relative; }
     .subscribe_area .connected_form .vector {
       position: absolute;
-      top: -9;
+      top: -9%;
       left: 59%;
       transform: translate(-50%, -50%);
       -webkit-transform: translate(-50%, -50%);
