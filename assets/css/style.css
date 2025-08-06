@@ -24016,6 +24016,9 @@ header.sticky {
   animation-direction: inherited;
   z-index: 99;
   padding: 10px 0; }
+  header.sticky .header__wrapper {
+    padding-bottom: 10px;
+    padding-top: 10px; }
   header.sticky .logo-wrapper .logo .standard-logo {
     display: none; }
   header.sticky .logo-wrapper .logo .sticky-logo {
@@ -24025,8 +24028,6 @@ header.sticky {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 20px;
-  padding-bottom: 20px;
   background-color: transparent;
   z-index: 9; }
   .header__wrapper .logo-wrapper .logo .sticky-logo {
@@ -24998,7 +24999,6 @@ header.sticky {
   .icon-title p {
     font-weight: 500;
     font-size: 18px;
-    line-height: 156%;
     color: #646464; }
 
 .how-work {
