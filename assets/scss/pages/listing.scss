@@ -110,7 +110,14 @@
 }
 .listing_menu_hc_btn{
     button{
-        line-height:36px !important;
+        line-height:34px !important;
+    }
+}
+.list-view .listing-item-hc {
+    gap: 10px !important;
+    figure{
+        width: 600px;
+        
     }
 }
 .listing_menu{
