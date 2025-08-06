@@ -8,6 +8,16 @@
 }
 .resource-education{
     margin-top: 150px;
+    .col-lg-4{
+        &:nth-child(1){
+            .resource-item{
+                p{
+                    padding-right: 40px;
+                }
+            }
+
+        }
+    }
      @include lg{
         margin-top: 120px;
     }
@@ -37,7 +47,7 @@
 }
 
 .icon-title{
-
+   
    display: flex;
    align-items: center;
    gap: 20px;
@@ -53,6 +63,8 @@
         padding: 8px 20px;
         border-left: 2px solid $border;
     }
-
+p{
+    padding-right: 3;
+}
 }
 

@@ -24229,8 +24229,7 @@ header.sticky {
     font-weight: 400;
     font-size: 17px;
     color: #111111;
-    margin-bottom: 0px;
-    background-color: red !important; }
+    margin-bottom: 0px !important; }
   .banner-search-container .nice-select {
     height: 48px;
     border: none;
@@ -24960,6 +24959,8 @@ header.sticky {
     display: none; } }
 .resource-education {
   margin-top: 150px; }
+  .resource-education .col-lg-4:nth-child(1) .resource-item p {
+    padding-right: 40px; }
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .resource-education {
       margin-top: 120px; } }
@@ -24994,6 +24995,8 @@ header.sticky {
     color: #111111;
     padding: 8px 20px;
     border-left: 2px solid #E4E4E4; }
+  .icon-title p {
+    padding-right: 3; }
 
 .how-work {
   margin-top: 150px;
