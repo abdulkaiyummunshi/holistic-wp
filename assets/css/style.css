@@ -28857,11 +28857,16 @@ ul.children {
 
 .listing_menu_hc_btn button {
   line-height: 34px !important; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .listing_menu_hc_btn button {
+      display: none !important; } }
 
 .list-view .listing-item-hc {
   gap: 10px !important; }
   .list-view .listing-item-hc figure {
     width: 600px; }
+  .list-view .listing-item-hc .service-tag h4 {
+    margin-top: 0px; }
 
 .listing_menu {
   border: 1px solid #E4E4E4;
