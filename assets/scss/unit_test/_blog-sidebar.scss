@@ -116,15 +116,12 @@
               font-weight: 500;
               color: $black;
               @include transition(0.4s);
-              &:hover{
-                color: $primary;
-              }
               // line-height: 20px;
             }
   
             &:hover{
               a{
-                color: $primary;
+                color: $primary !important;
               }
             }
           }

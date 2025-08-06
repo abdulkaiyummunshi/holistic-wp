@@ -27966,10 +27966,8 @@ ul.children {
       font-weight: 500;
       color: #111111;
       transition: all 0.4s ease; }
-      .blog-area .sidebar .popular-post .post-item .post-title a:hover {
-        color: #00AF78; }
     .blog-area .sidebar .popular-post .post-item .post-title:hover a {
-      color: #00AF78; }
+      color: #00AF78 !important; }
 .blog-area .sidebar .card-item {
   border-radius: 20px; }
   .blog-area .sidebar .card-item .section-heading {
