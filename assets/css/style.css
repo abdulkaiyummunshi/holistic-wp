@@ -25462,7 +25462,8 @@ header.sticky {
     .footer .footer_last p {
       font-weight: 400;
       font-size: 17px;
-      color: #646464; }
+      color: #646464;
+      margin-bottom: 0px !important; }
       @media only screen and (min-width: 0px) and (max-width: 767px) {
         .footer .footer_last p {
           font-size: 14px; } }

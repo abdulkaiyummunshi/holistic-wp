@@ -167,11 +167,11 @@
         p{
             font-weight: 400;
             font-size: 17px;
-            margin-bottom: 0px !important;
             @include sm{
                 font-size: 14px;
             }
             color: $text;
+            margin-bottom: 0px !important;
         }
         @include nesthub{ 
             margin-top: -17px;
