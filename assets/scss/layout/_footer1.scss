@@ -66,6 +66,7 @@
                 @include flex(row, flex-start, center);
                 gap: 10px;
                 li{
+                    padding: 0px !important;
                     a{
                         width: fit-content;
                         @include border-radius(5px);
