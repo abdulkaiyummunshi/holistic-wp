@@ -28861,12 +28861,20 @@ ul.children {
     .listing_menu_hc_btn button {
       display: none !important; } }
 
+.listing-item-hc {
+  gap: 10px !important; }
+  .listing-item-hc figure {
+    width: 600px; }
+    .listing-item-hc figure .service-tag h4 {
+      margin: 0px !important; }
+
 .list-view .listing-item-hc {
   gap: 10px !important; }
   .list-view .listing-item-hc figure {
     width: 600px; }
-  .list-view .listing-item-hc .service-tag h4 {
-    margin-top: 0px; }
+
+.service-tag h4 {
+  margin: 0px !important; }
 
 .listing_menu {
   border: 1px solid #E4E4E4;

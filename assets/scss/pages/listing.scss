@@ -116,18 +116,32 @@
         }
     }
 }
-.list-view .listing-item-hc {
+    .listing-item-hc {
+    gap: 10px !important;
+    figure{
+        width: 600px;
+        .service-tag{
+            h4{
+                margin: 0px !important;
+            }
+        }
+    }
+}
+.list-view {
+    .listing-item-hc {
     gap: 10px !important;
     figure{
         width: 600px;
         
     }
-    .service-tag{
+    
+}
+}
+.service-tag{
         h4{
             margin: 0px !important;
         }
     }
-}
 .listing_menu{
     border: 1px solid $border;
     padding: 4px 30px;
