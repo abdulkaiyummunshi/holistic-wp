@@ -25622,6 +25622,8 @@ header.sticky {
     .subscribe_area .input_area button {
       background-color: #111111;
       border: none;
+      position: relative;
+      z-index: 10;
       border-radius: 999px;
       -moz-border-radius: 999px;
       -webkit-border-radius: 999px;

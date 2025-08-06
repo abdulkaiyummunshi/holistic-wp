@@ -93,6 +93,8 @@
         button{
             background-color: $black;
             border: none;
+            position: relative;
+            z-index: 10;
             @include border-radius(999px);
             height: 60px;
             line-height: 60px;
