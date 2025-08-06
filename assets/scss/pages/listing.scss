@@ -97,6 +97,11 @@
 .listing-item-hc-content{
     padding: 20px 15px 20px !important;
 }
+.listing_menu_hc_btn{
+    button{
+        line-height:36px !important;
+    }
+}
 .listing_menu{
     border: 1px solid $border;
     padding: 4px 30px;
@@ -118,7 +123,7 @@
         button{
             width: 40px;
             height: 40px;
-            line-height: 34px !important;
+            line-height: 34px;
             border: none !important;
             background-color: $gray1;
             @include border-radius(10px);

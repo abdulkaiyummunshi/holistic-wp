@@ -28847,6 +28847,9 @@ ul.children {
 .listing-item-hc-content {
   padding: 20px 15px 20px !important; }
 
+.listing_menu_hc_btn button {
+  line-height: 36px !important; }
+
 .listing_menu {
   border: 1px solid #E4E4E4;
   padding: 4px 30px;
