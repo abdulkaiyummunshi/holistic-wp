@@ -111,6 +111,9 @@
 .listing_menu_hc_btn{
     button{
         line-height:34px !important;
+        @include sm{
+            display: none !important;
+        }
     }
 }
 .list-view .listing-item-hc {
