@@ -121,6 +121,14 @@
         }
     }
 }
+.listing_menu_hc{
+    .col-lg-6{
+        @include sm{
+            width: 50% !important;
+            
+        }
+    }
+}
 .listing_menu_hc_btn{
     button{
         line-height:34px !important;
