@@ -5,6 +5,9 @@
   .widget_holistic_blog_search_widget {
     margin: 0px !important;
 }
+#holistic_blog_search_widget-2 {
+  padding: 25px 24px 40px 24px;
+}
   .sidebar {
      .widge{
       box-shadow: 0 20px 80px 0 rgba(8, 8, 8, 0.05);
@@ -57,7 +60,7 @@
         .search-icon {
           position: absolute;
           top: 50%;
-          right: 30px;
+          right: 6px;
           transform: translateY(-50%);
           cursor: pointer;        
           color: $black;
