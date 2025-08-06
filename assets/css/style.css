@@ -28864,10 +28864,10 @@ ul.children {
       .listing_menu .listing_menu_btn {
         justify-content: flex-start; } }
     .listing_menu .listing_menu_btn button {
-      border: none;
       width: 40px;
       height: 40px;
-      line-height: 40px;
+      line-height: 41px;
+      border: none !important;
       background-color: #f9f9f9;
       border-radius: 10px;
       -moz-border-radius: 10px;
