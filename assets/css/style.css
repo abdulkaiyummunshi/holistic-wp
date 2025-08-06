@@ -25442,7 +25442,8 @@ header.sticky {
         .footer .footer_area_quick_menu .contact_card_area .contact_details h5 {
           font-weight: 500;
           font-size: 18px;
-          color: #111111; }
+          color: #111111;
+          margin: 0px !important; }
         .footer .footer_area_quick_menu .contact_card_area .contact_details a {
           font-weight: 400;
           font-size: 17px;
