@@ -24996,7 +24996,10 @@ header.sticky {
     padding: 8px 20px;
     border-left: 2px solid #E4E4E4; }
   .icon-title p {
-    padding-right: 3; }
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 156%;
+    color: #646464; }
 
 .how-work {
   margin-top: 150px;
