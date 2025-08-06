@@ -98,7 +98,7 @@
                 padding: 0px;
                 @include flex(column, flex-start, flex-start);
                 gap: 15px;
-                margin-top: 33px;
+                margin-top: 26px;
                 li{
                     a{
                         font-weight: 400;
@@ -118,6 +118,7 @@
                 font-size: 26px;
                 color: $black;
                 padding-bottom: 20px;
+                margin: 0px !important;
                 border-bottom: 1px solid $primary;
             }
             

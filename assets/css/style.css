@@ -25400,7 +25400,7 @@ header.sticky {
         justify-content: flex-start;
         align-items: flex-start;
         gap: 15px;
-        margin-top: 33px; }
+        margin-top: 26px; }
         .footer .footer_area_quick_menu .quicklink ul li a {
           font-weight: 400;
           font-size: 17px;
@@ -25413,6 +25413,7 @@ header.sticky {
         font-size: 26px;
         color: #111111;
         padding-bottom: 20px;
+        margin: 0px !important;
         border-bottom: 1px solid #00AF78; }
     .footer .footer_area_quick_menu .contact_card_area {
       margin-top: 36px; }
