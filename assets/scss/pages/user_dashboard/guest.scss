@@ -1,0 +1,872 @@
+  .my_booking_area{
+        width: 100%;
+        
+    }
+    .user_dashboard_guest{
+        .row{
+            &.style_101{
+                @include md{
+                    gap: 30px;
+                }
+                @include sm{
+                    gap: 30px;
+                }
+            }
+        }
+    }
+    .booking_card{
+        padding: 60px 50px 60px 30px;
+        @include sm{
+            padding: 20px;
+        }
+        border-top: 1px solid $border;
+        position: relative;
+        .user_meta_info{
+            @include flex(row, flex-start, center);
+            gap: 30px;
+            @include sm{
+                gap: 20px;
+            }
+            .user_img{
+                width: 88px;
+                height: 88px;
+                @include border-radius(5px);
+                @include sm{
+                    width: 50px;
+                    height: 50px;
+                    
+                }
+                img{
+                    @include border-radius(5px);
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .name_btn{
+                @include sm{
+                    width: calc(100% - 80px);
+                }
+
+            }
+            .user_name{
+
+                h4{
+                    font-weight: 600;
+                    font-size: 26px;
+                    @include sm{
+                        font-size: 18px;
+                    }
+                    color: #000;
+                }
+            }
+            .approved_unpaid_btn{
+                @include flex(row, flex-start, center);
+                gap: 14px;
+                margin-top: 10px;
+                button{
+                    border-radius: 5px;
+                    padding: 10px 23px;
+                    font-weight: 500;
+                    font-size: 16px;
+                    text-transform: capitalize;
+                    color: $white;
+                    background-color: $primary;
+                    border: none;
+                    @include sm{
+                        padding: 5px 10px;
+                        font-size: 14px;
+                    }
+                    &.style_1{
+                        background-color: #d40101;
+                    }
+                }
+            }
+        }
+        .booking_list_area{
+            padding-left: 118px;
+            @include sm{
+                padding-left: 0px;
+            }
+        }
+        ul{
+            @include flex(column, flex-start, flex-start);
+            gap: 16px;
+            margin-top: 30px;
+            @include sm{
+                margin-top: 15px;
+                gap: 10px;
+            }
+            li{
+                font-weight: 400;
+                font-size: 17px;
+                color: $black;
+                @include flex(row, flex-start, center);
+                gap: 20px;
+                @include sm{
+                    font-size: 14px;
+                    gap: 10px;
+                }
+                span{
+                    color: $primary;
+                }
+                p{
+                    color: $text;
+                    @include sm{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .btn_area{
+            button{
+                border: none;
+                background-color: $primary;
+                padding: 14px 20px;
+                color: $white;
+                border: 1px solid $border;
+                @include border-radius(5px);
+                font-weight: 400;
+                font-size: 17px;
+                @include sm{
+                    padding: 7px 10px;
+                    font-size: 14px;
+                }
+                span{
+                    margin-right: 10px;
+                    color: $white;
+                }
+            }
+        }
+        .pay_btn{
+            position: absolute;
+            top: 50%;
+            @include transformY(-50%);
+            right: 50px;
+            @include sm{
+                display: none;
+            }
+            button{
+                border: none;
+                background-color: #d40101;
+                @include border-radius(5px);
+                color: $white;
+                padding: 10px 30px;
+                font-weight: 500;
+                font-size: 16px;
+                text-transform: capitalize;
+            }
+        }
+    }
+
+
+.user_dashboard_guest {
+    width: 100%;
+    .sidebar {
+        border-radius: 20px;
+        width: 100%;
+        padding: 40px;
+        @include nesthub{
+            padding: 20px;
+        }
+            @include md{
+                padding: 20px !important;
+            }
+            @include sm{
+                padding: 20px !important;
+            }
+        background-color: $gray1;
+        overflow-y: auto; 
+        // height: 100%; 
+        // box-shadow: 0 0 10px rgba(0,0,0,0.05); 
+    }
+    .sidebar_card {
+        &:not(:first-child) {
+            margin-top: 40px; 
+        }
+        .title {
+            margin-bottom: 20px; 
+            h3 {
+                font-weight: 500;
+                font-size: 12px;
+                text-transform: uppercase;
+                color: $black;
+                position: relative;
+                padding-right: 10px;
+                display: inline-block;
+                vertical-align: middle;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: calc(100% + 10px); 
+                    width: 100px;
+                    height: 1px;
+                    background-color: $border;
+                }
+            }
+        }
+        .btn_area {
+            @include flex(column, flex-start, flex-start);
+            gap: 20px; 
+
+            
+            > button { 
+                border: 1px solid $border;
+                @include border-radius(5px);
+                padding: 14px 22px;
+                width: 100%;
+                font-weight: 400;
+                font-size: 17px;
+                color: $black;
+                background-color: transparent;
+                @include transition(0.4s);
+                text-align: left;
+                cursor: pointer;
+                @include flex(row, flex-start, center); 
+                span {
+                    margin-right: 10px;
+                    color: $primary; 
+                    @include transition(0.4s); 
+                }
+                &:hover, &.active { 
+                    background-color: $primary;
+                    color: $white;
+                    border-color: $primary; 
+                }
+                &:hover span, &.active span { 
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    .booking-wrapper { 
+        width: 100%;
+        position: relative;
+
+        > button.dropdown-toggle { 
+            border: 1px solid $border;
+            @include border-radius(5px);
+            padding: 14px 22px;
+            width: 100%;
+            font-weight: 400;
+            font-size: 17px;
+            color: $black;
+            background-color: transparent;
+            @include transition(0.4s);
+            text-align: left;
+            cursor: pointer;
+            @include flex(row, flex-start, center); 
+
+            span {
+                margin-right: 10px;
+                color: $primary;
+                @include transition(0.4s);
+            }
+            &::after{
+                display: none;
+            }
+            &::before {
+                content: '\f078';
+                position: absolute;
+                top: 50%;
+                @include transformY(-50%);
+                right: 20px;
+                font-family: 'Font Awesome 5 Free';
+                font-weight: 900;
+                // margin-left: auto; 
+                transition: transform 0.2s ease;
+                color: $text; 
+            }
+        }
+
+        &.open > button.dropdown-toggle::before {
+            transform: rotate(180deg);
+            margin-top: -8px;
+        }
+
+        &.active > button.dropdown-toggle {
+            background-color: $primary;
+            color: $white;
+            border-color: $primary;
+            span {
+                color: $white;
+            }
+            &::before {
+                color: $white; 
+            }
+        }
+    }
+
+    .dropdown-menu { 
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        background-color: $white; 
+        width: calc(100% - 2px); 
+        margin-left: 1px; 
+        border: 1px solid $border;
+        border-top: none; 
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        display: none; 
+        overflow: hidden; 
+
+        li {
+            a {
+                display: block;
+                padding: 10px 22px 10px 45px; 
+                font-size: 16px;
+                color: $black;
+                text-decoration: none;
+                @include transition(0.2s);
+                @include flex(row, flex-start, center); 
+                gap: 10px; 
+                span {
+                    color: $primary; 
+                    font-size: 14px; 
+                    @include transition(0.2s);
+                }
+
+                &:hover, &.active { 
+                    color: $primary; 
+                }
+                &:hover span, &.active span {
+                    color: $primary; 
+                }
+            }
+        }
+    }
+
+   
+    .my_booking_area {
+        // border: 1px solid $border;
+        // border-radius: 20px;
+        width: 100%;
+        background-color: $white;
+        overflow: hidden;
+        min-height: 500px; 
+        // box-shadow: 0 0 10px rgba(0,0,0,0.05); 
+        .heading_area {
+            padding: 20px 30px;
+            border-bottom: 1px solid $border;
+            .row{
+                @include sm{
+                    gap: 20px;
+                }
+            }
+            .name {
+                h4 {
+                    font-size: 26px;
+                    font-weight: 600;
+                    color: $black;
+                    margin: 0;
+                }
+            }
+        }
+
+        .content-section {
+            display: none; 
+            &.active {
+                display: block;
+            }
+            .content-body {
+                padding: 30px; 
+            }
+        }
+
+        // .qr_scan_area {
+        //     text-align: center;
+        //     padding: 30px;
+        //     h4 {
+        //         h5 {
+        //             font-size: 18px;
+        //             color: $text;
+        //             margin-bottom: 20px;
+        //             font-weight: normal; 
+        //         }
+        //     }
+        //     .qr_code {
+        //         margin-top: 30px;
+        //         .qr_img {
+        //             display: inline-block;
+        //             img {
+        //                 max-width: 180px;
+        //                 height: auto;
+        //                 border: 1px solid $border;
+        //                 border-radius: 5px;
+        //             }
+        //         }
+        //         .click_btn {
+        //             margin-top: 20px;
+                    
+        //             span {
+        //                 display: inline-block;
+        //                 background-color: $primary;
+        //                 color: $white;
+        //                 padding: 12px 25px;
+        //                 border-radius: 5px;
+        //                 cursor: pointer;
+        //                 font-size: 1em;
+        //                 @include transition(0.4s);
+        //                 &:hover {
+        //                     background-color: red;
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
+    }
+}
+
+
+
+
+
+
+
+// ---------------------
+.heading_area{
+    padding: 30px;
+    border-bottom: 1px solid transparent !important;
+    .name{
+        h4{
+            font-weight: 500;
+            font-size: 18px;
+            color: $black;
+        }
+    }
+    .date_select{
+        @include flex(row, center, center);
+    }
+    .nice-select{
+        border-radius: 5px;
+        color: $black;
+        opacity: 1;
+        font-size: 18px;
+        font-weight: 500;
+        font-family: $outfit-font;
+        clear: both;
+        cursor: pointer;
+        display: block;
+        float: right;
+        height: 10px !important;
+        border: 1px solid transparent !important;
+        line-height: 0px !important;
+        outline: 0;
+        padding-left: 18px;
+        padding-right: 30px;
+        position: relative;
+        margin-top: 10px !important;
+        margin-bottom: 0px !important;
+        text-align: right !important;
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        white-space: nowrap;
+        width: 300px !important;
+        &::after{
+            display: none;
+        }
+        &::before{
+            content: "\f107";
+            font-family: "Fontawesome";
+            position: absolute;
+            top: 50%;
+            @include transformY(-50%);
+            right: 0px;
+            @include transition(0.4s);
+        }
+        &.open{
+            &::before{
+                transform: rotate(180deg);
+                -webkit-transform: rotate(180deg);
+                -moz-transform: rotate(180deg);
+                -ms-transform: rotate(180deg);
+                -o-transform: rotate(180deg);
+}
+        }
+    }
+}
+
+.single_inbox{
+    padding: 40px 60px;
+    position: relative;
+    @include nesthubmax{
+        padding: 30px;
+    }
+    @include nesthub{
+        padding: 20px;
+    }
+    @include md{
+        padding: 30px;
+    }
+    @include sm{
+        padding: 10px;
+    }
+    border-top: 1px solid $border;
+    &:last-child{
+        border-bottom: 1px solid $border;
+    }
+    .people_info{
+    @include flex(row, flex-start, center);
+    gap: 20px;
+    }
+    .image{
+        width: 88px;
+        height: 88px;
+        @include nesthub{
+            width: 70px;
+            height: 70px;
+        }
+        @include sm{
+            width: 44px;
+            height: 44px;
+        }
+        @include border-radius(5px);
+        img{
+            @include border-radius(5px);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .name_message{
+        @include flex(column, center, flex-start);
+        gap: 15px;
+        @include sm{
+            gap: 2px;
+        }
+    }
+    .people_name{
+        @include flex(row, flex-start, center);
+        gap: 30px;
+        @include nesthub{
+            gap: 20px;
+        }
+        @include sm{
+            gap: 15px;
+        }
+        h4{
+            font-weight: 600;
+            font-size: 26px;
+            @include nesthub{
+                font-size: 20px;
+            }
+            @include sm{
+                font-size: 13px;
+            }
+            color: #000;
+        }
+        span{
+            font-weight: 400;
+            font-size: 17px;
+            @include sm{
+                font-size: 9px;
+            }
+            color: #000;
+            background: rgba(0, 175, 120, 0.1);
+            padding: 5px 10px;
+            @include sm{
+                padding: 3px 5px;
+            }
+            @include border-radius(5px);
+        }
+    }
+    .message{
+        p{
+            font-weight: 400;
+            font-size: 17px;
+            color: #000;
+            @include sm{
+                font-size: 9px;
+            }
+            
+            span{
+                color:  #ed7161;
+                margin-right: 10px;
+                @include sm{
+                    margin-right: 5px;
+                }
+                
+}
+        }
+    }
+    .message_time{
+        position: absolute;
+        top: 50%;
+        right: 60px;
+        @include nesthubmax{
+            right: 10px;
+        }
+        @include nesthub{
+            right: 20px;
+        }
+        @include md{
+            right: 30px;
+        }
+        @include sm{
+            right: 10px;
+        }
+        @include transformY(-50%);
+        span{
+            font-weight: 400;
+            font-size: 17px;
+            color: $white;
+            background-color: $primary;
+            padding: 5px 10px;
+            @include nesthub{
+                padding: 4px 8px;
+                font-size: 14px;
+            }
+            i{
+                margin-right: 5px;
+            }
+            @include border-radius(5px);
+            @include sm{
+                font-size: 9px;
+                padding: 3px 5px;
+            }
+        }
+    }
+}
+
+.page_change_btn{
+    padding: 60px;
+    @include nesthubmax{
+        padding: 50px
+    }
+    @include nesthub{
+        padding: 40px
+    }
+    @include md{
+        padding: 30px
+    }
+    @include sm{
+        padding: 20px
+    }
+    ul{
+        @include flex(row, flex-start, center);
+        gap: 20px;
+        li{
+            button{
+                background-color: transparent;
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                
+                @include border-radius(50%);
+                border: 1px solid $border;
+                font-weight: 500;
+                font-size: 18px;
+                @include sm{
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px;
+                    font-size: 16px;
+                }
+                color: #000;
+                &:hover{
+                    background-color: $primary;
+                    border: 1px solid transparent;
+                    color:  $white;
+                }
+            }
+        }
+    }
+}
+
+.review_card{
+    border-top: 1px solid $border;
+    padding: 40px 60px;
+    @include md{
+    padding: 20px 20px;
+    }
+    @include sm{
+    padding: 10px 20px;
+    }
+    .review_heading{
+        @include flex(row, space-between, center);
+        flex-wrap: wrap;
+        @include sm{
+        gap: 20px;
+        .stars{
+        margin-bottom: 0px;
+        }
+        }
+        .user_meta_info{
+            @include flex(row, flex-start, center);
+            gap: 14px;
+            .image{
+                width: 65px;
+                height: 65px;
+                @include border-radius(50%);
+                line-height: 65px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    @include border-radius(50%);
+
+                }
+            }
+            h4{
+                font-weight: 500;
+                font-size: 18px;
+                color: $black;
+            }
+            p{
+                font-weight: 400;
+                font-size: 17px;
+                color: $text;
+                margin-top: 5px;
+            }
+        }
+    }
+    .edit_delete_btn{
+        @include flex(row, flex-start, center);
+        gap: 30px;
+       button{
+        padding: 12px 22px;
+        border: 1px solid $border;
+        background-color: $gray1;
+        @include border-radius(5px);
+        font-weight: 400;
+        font-size: 17px;
+        color: $black;
+        span{
+            margin-right: 10px;
+        }
+        @include sm{
+        padding: 6px;
+        font-size: 13px;
+        span{
+        margin-right: 5px;
+        }
+        }
+        &.style_1{
+            background-color: #d40101;
+            color: $white;
+            border: 1px solid transparent;
+        }
+       }
+    }
+}
+
+.profile_info{
+    padding: 30px 60px 60px 60px;
+    @include nesthub{
+        padding: 30px 30px 30px 30px;
+    }
+    @include sm{
+        padding: 20px;
+        @include flex(column, center, center);
+        
+    }
+    border-top: 1px solid $border;
+    .profile_image{
+        width: 150px;
+        height: 150px;
+        @include border-radius(5px);
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            @include border-radius(5px);
+        }
+    }
+    .profile_settings{
+        @include flex(row, center, center);
+        gap: 30px;
+        @include sm{
+            gap: 10px;
+        }
+        flex-wrap: wrap;
+        
+    }
+    input{
+        border: 1px solid $border;
+        border-radius: 5px;
+        width: calc(50% - 15px);
+        @include sm{
+            width: 100%;
+        }
+        padding: 16px 30px;
+        font-weight: 400;
+        font-size: 17px;
+        color: $text;
+        background-color: transparent;
+    }
+    .password_change{
+        
+        h4{
+            font-weight: 500;
+            font-size: 18px;
+            color: #1d2128;
+            padding-bottom: 20px;
+            border-bottom: 1px solid $border;
+            width: 100%;
+        }
+        .current_password{
+            input{
+                width: 100%;
+            }
+        }
+        .new_password{
+            @include flex(row, center, center);
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        
+        
+    }
+    .save_btn{
+        button{
+            @include border-radius(5px);
+        }
+    }
+}
+
+.logout_area{
+    border-top: 1px solid $border;
+    padding: 40px 60px;
+    @include sm{
+        padding: 20px;
+    }
+    height: 553px;
+    h4{
+        font-weight: 500;
+        font-size: 18px;
+        color: $black;
+    }
+    .logout_btn{
+        @include flex(row, flex-start, center);
+        gap: 20px;
+
+    }
+    button{
+        padding: 14px 13px;
+        border: 1px solid $primary;
+        background-color: transparent;
+        font-weight: 500;
+        font-size: 16px;
+        text-transform: capitalize;
+        color: $black;
+        @include transition(0.4s);
+        @include border-radius(5px);
+        &:hover{
+            color: $white;
+            background-color: $primary;
+        }
+
+    }
+    span{
+        color: $black;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}

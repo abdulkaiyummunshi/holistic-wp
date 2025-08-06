@@ -1,0 +1,69 @@
+
+
+/*----------------------------------------*/
+/*  12. BREADCRUMB AREA
+/*----------------------------------------*/
+
+.breadcrumb-bg{
+    background-image: url("../imgs/others/breadcrumb-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 560px;
+
+    @include xl{
+        min-height: 480px;
+        margin-left: 0;
+    }
+    @include lg{
+        min-height: 400px;
+    }
+    @include md{
+        min-height: 360px;
+    }
+    @include sm{
+        min-height: 320px;
+    }
+}
+
+.breadcrumb-content{
+    padding-top: 220px;
+
+    @include lg{
+        padding-top: 180px;
+    }
+
+    @include md{
+        padding-top: 160px;
+    }
+
+    .title{
+        font-size: 120px;
+        line-height: 1;
+        color: $white;
+        margin-bottom: 20px;
+
+        @include xxl{
+            font-size: 100px;
+        }
+        @include xl{
+            font-size: 80px;
+        }
+        @include lg{
+            font-size: 60px;
+        }
+        @include md{
+            font-size: 54px;
+        }
+        @include sm{
+            font-size: 50px;
+        }
+        @include xxs{
+            font-size: 42px;
+        }
+
+        span{
+            color: $primary;
+        }
+    }
+}

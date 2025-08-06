@@ -1,0 +1,235 @@
+.footer{
+    position: relative;
+    background: $white;
+    box-shadow: 0 5px 60px 0 rgba(0, 0, 0, 0.05);
+    padding: 0px 20px;
+    @include nesthubmax{
+        margin-top: 283px;
+    }
+    @include nesthub{
+        margin-top: 283px;
+    }
+    @include sm{
+        padding: 0px 10px;
+        margin-top: 80px !important;
+    }
+    .vector{
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        pointer-events: none;
+    }
+    .footer_area_quick_menu{
+        @include flex(row, space-between, flex-start);
+        flex-wrap: wrap;
+        padding: 208px 10px 80px 10px;
+        @include sm{
+            gap: 40px;
+        }
+        @include md{
+            gap: 40px 0px;
+        }
+        @include nesthub{
+            gap: 40px 0px;
+        }
+        .footer_logo{
+            a{
+                width: fit-content;
+                height: fit-content;
+                display: block;
+                cursor: pointer !important;
+                img{
+                    width: fit-content;
+                    height: 100%;
+                    object-fit: contain;
+                    z-index: 100;
+                    cursor: pointer;
+                }
+            }
+        }
+        p{
+            font-weight: 400;
+            font-size: 17px;
+            color: $text;
+            margin-top: 29px;
+           @include nesthub{
+             br{
+                display: none;
+            }
+           }
+        }
+        .social_area{
+            ul{
+                margin: 0px;
+                margin-top: 29px;
+                padding: 0px;
+                @include flex(row, flex-start, center);
+                gap: 10px;
+                li{
+                    a{
+                        width: fit-content;
+                        @include border-radius(5px);
+                        width:40px;
+                        height: 40px;
+                        border: 1px solid $border;
+                        color: $black;
+                        display: block;
+                        text-align: center;
+                        line-height: 40px;
+                        @include transition(0.4s);
+                        &:hover{
+                            background-color: $primary;
+                            border: 1px solid transparent;
+                            color: $white;
+                        }
+                    }
+                }
+                
+                
+            }
+        }
+        
+        .quicklink{
+            @include flex(column, flex-start, flex-start);
+            height: 100%;
+            ul{
+                margin: 0px;
+                padding: 0px;
+                @include flex(column, flex-start, flex-start);
+                gap: 15px;
+                margin-top: 33px;
+                li{
+                    a{
+                        font-weight: 400;
+                        font-size: 17px;
+                        color: $text;
+                        @include transition(0.4s);
+                        &:hover{
+                            color: $primary;
+                        }
+                    }
+                    
+                }
+            }
+            
+            h3{
+                font-weight: 600;
+                font-size: 26px;
+                color: $black;
+                padding-bottom: 20px;
+                border-bottom: 1px solid $primary;
+            }
+            
+        }
+        .contact_card_area{
+            margin-top: 36px;
+            .contact_card_wrapper{
+                @include flex(row, flex-start, center);
+                gap: 15px;
+            }
+            .contact_icon{
+                span{
+                    display: block;
+                    background-color: $primary;
+                    border-radius: 999px;
+                    width: 50px;
+                    height: 50px;
+                    line-height: 50px;
+                    text-align: center;
+                    color: $white;
+                    font-weight: 900;
+                    font-size: 16px;
+                }
+            }
+            .contact_details{
+                @include flex(column, center, flex-start);
+                gap: 10px;
+                h5{
+                    font-weight: 500;
+                    font-size: 18px;
+                    color: $black;
+                }
+                a{
+                    font-weight: 400;
+                    font-size: 17px;
+                    color: $text;
+                    @include transition(0.4s);
+                    &:hover{
+                        color: $primary;
+                    }
+                }
+            }
+        }
+        
+    }
+    
+    .footer_last{
+        p{
+            font-weight: 400;
+            font-size: 17px;
+            @include sm{
+                font-size: 14px;
+            }
+            color: $text;
+        }
+        @include nesthub{ 
+            margin-top: -17px;
+        }
+        @include sm{
+            margin-top: -10px;
+            justify-content: flex-start;
+            gap: 10px;
+        }
+        padding-bottom: 20px;
+        padding-top: 20px;
+        @include md {
+            .footer_last_menu{
+                gap:20px;
+                ul{
+                    justify-content: flex-start !important;
+                    padding: 0;
+                    margin-top: 10px;
+                }
+            }
+        }
+        min-height: 44px;
+        @include flex(row, space-between, flex-end);
+        flex-wrap: wrap;
+        border-top: 1px solid $border;
+        width: 100%;
+        .footer_last_menu{
+            @include sm{
+                margin-bottom: -10px;
+            }
+            ul{
+                @include flex(row, flex-end, flex-end);
+                margin: 0px;
+                gap: 20px;
+                @include sm{
+                    justify-content: flex-start;
+                    padding: 0;
+                }
+                li{
+                    text-align: left;
+                    width: 100%;
+                    width: fit-content !important;
+                    a{
+                        font-weight: 400;
+                        z-index: 10;
+                        font-size: 17px;
+                        @include sm{
+                            font-size: 14px;
+                        }
+                        color: $text;
+                        @include transition(0.4s);
+                        &:hover{
+                            color: $primary;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+    
+}

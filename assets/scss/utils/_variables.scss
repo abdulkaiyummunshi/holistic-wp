@@ -1,0 +1,93 @@
+
+
+/*----------------------------------------*/
+/*  01. VARIBALES DECLARARION
+/*----------------------------------------*/
+
+
+// color variable
+$primary : #00AF78;  
+$text: #646464;
+$white: #fff;
+$black: #111111;
+$border: #E4E4E4;
+$star: #FFB124;
+$gray1: #f9f9f9;
+
+
+
+
+
+$black-2: rgba(23, 36, 39, 0.7);
+$gray: #565674;
+$gray-2: #CACACA;
+$gray-3: #B2B0B0;
+$gray-4: #D8D0D0;
+$border-clr: #FFFFFF4D;
+$border-2: rgba(23, 36, 39, 0.12);
+$section-bg:#213438;
+$section-bg-2:#F3F3E8;
+
+
+
+// Google Font
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400..700&display=swap');
+
+$outfit-font: "Outfit", sans-serif;
+
+// Responsive Variable   optional
+$xxxl: '(min-width: 1920px)';
+$xxl: '(max-width: 1919px)';
+$xl-max: '(max-width: 1599px)';
+$xl: '(max-width: 1399px)';
+$lg: '(max-width: 1199px)';
+$md: '(max-width: 991px)';
+$sm: '(max-width: 767px)';
+$xs: '(max-width: 574px)';
+$xxs: '(max-width: 479px)';
+
+
+
+/*
+
+#pagination-wrapper {
+  margin-top: 80px; }
+  #pagination-wrapper ul {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center; }
+    #pagination-wrapper ul li:nth-child(1) span {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      background: transparent;
+      border: 1px solid #E4E4E4;
+      border-radius: 50%;
+      font-weight: 500;
+      font-size: 18px;
+      color: #111111; }
+      #pagination-wrapper ul li:nth-child(1) span:hover {
+        background-color: #00AF78;
+        color: #fff; }
+  #pagination-wrapper a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background: transparent;
+    border: 1px solid #E4E4E4;
+    border-radius: 50%;
+    font-weight: 500;
+    font-size: 18px;
+    color: #111111; }
+    #pagination-wrapper a:hover {
+      background-color: #00AF78;
+      color: #fff; }
+  
+  #pagination-wrapper ul li:last-child a{
+    color: #00af78;
+  }
+
+*/

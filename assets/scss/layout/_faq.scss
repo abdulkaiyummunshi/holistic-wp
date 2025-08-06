@@ -1,0 +1,111 @@
+.faq_section_area{
+    background-color: $white;
+    .faq_section_wrapper{
+        @include flex(column, center, center);
+        gap: 40px;
+        @include nesthub{
+            p{
+                br{
+                    display: none;
+                }
+            }
+        }
+        @include sm{
+            gap: 20px;
+        }
+        width: 100%;
+        
+    }
+}
+.faq {
+    width: 100%;
+    @include border-radius(10px);
+    border: 1px solid $border;
+    background-color: $white;
+    &.active{
+        max-height: 800px;
+        box-shadow: 0 5px 60px 0 rgba(0, 0, 0, 0.05);
+        border: 1px solid transparent;
+        @include border-radius(0px);
+        .answer{
+            padding-bottom: 26px;
+            margin-top: -7px;
+            max-height: 827px !important;
+        }
+        .icon_arrow{
+            background-color: $primary !important;
+            color: $white !important;
+            i{
+                transform: rotate(-90deg);
+                -webkit-transform: rotate(-90deg);
+                -moz-transform: rotate(-90deg);
+                -ms-transform: rotate(-90deg);
+                -o-transform: rotate(-90deg);
+}
+        }
+    }
+    .question {
+        @include flex(row, flex-start, center);
+        gap: 20px;
+        padding: 20px 30px;
+        @include sm{
+            padding: 10px;
+        }
+        background-color: $white;
+        @include border-radius(10px);
+        h2{
+            width: calc(100% - 30px);
+            font-weight: 600;
+            font-size: 26px;
+            @include sm{
+                font-size: 18px;
+            }
+            color: $black;
+            span{
+                font-weight: 600;
+                font-size: 26px;
+                @include sm{
+                    font-size: 18px;
+                }
+                color: $text;
+                margin-right: 15px;
+            }
+        }
+        .icon_arrow{
+            border-radius: 999px;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            @include sm{
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                font-size: 14px;
+            }
+            text-align: center;
+            color: $primary;
+            background-color: $gray1;
+            i{
+                @include transition(0.4s);
+            }
+        }
+    }
+    .answer {
+        @include flex(row, flex-start, center);
+        padding-left: 80px;
+        @include sm{
+            padding-left: 10px;
+        }
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height 0.4s ease-in-out;
+        transition: all 0.3s ease-in-out; 
+        p{
+            font-weight: 400;
+            font-size: 17px;
+            color: $text;
+        }
+    }
+    
+    
+}

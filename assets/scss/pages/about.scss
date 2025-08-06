@@ -1,0 +1,165 @@
+.our_mission_area{
+    .mission_content{
+        b{
+            font-weight: 500;
+            font-size: 18px;
+            color: $black;
+        }
+        .describtion{
+            padding-left: 20px;
+            border-left: 2px solid $primary;
+            p{
+                font-weight: 400;
+                font-size: 17px;
+                color: $text;
+            }
+        }
+    }
+    .mission_image{
+        border-radius: 20px 20px 150px 20px;
+        max-width: 544px;
+        width: 100%;
+        height: 580px;
+        @include sm{
+            height: 300px;
+            margin-top: 30px;
+        }
+        position: relative;
+        img{
+            border-radius: 20px 20px 150px 20px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .child_image{
+            animation: up-down2 2s ease-in-out infinite alternate;
+            -webkit-animation: up-down2 2s ease-in-out infinite alternate;
+            position: absolute;
+            top: 50%;
+            left: -180px;
+                        @include transformY(-50%);
+            border: 5px solid $primary;
+            border-radius: 20px;
+            width: 279px;
+            height: 377px;
+            @include nesthubmax{
+                left: 0px;
+            }
+            @include sm{
+                height: 200px;
+                width: 150px;
+                top: 100%;
+                @include transformY(-100%);
+            }
+            box-shadow: 0 5px 60px 0 rgba(0, 0, 0, 0.05);
+            @include sm{
+                left: 0px;
+
+            }
+            img{
+                border-radius: 20px;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.clients_feedback_area{
+    .row{
+        &.style_1{
+            @include md{
+                gap: 30px;
+            }
+            @include sm{
+                gap: 24px;
+            }
+        }
+    }
+    .feedback_card{
+        border: 1.22px solid $border;
+        border-radius: 20px;
+        padding: 40px 33px 40px 40px;
+        @include sm{
+            padding: 20px 15px 20px 20px;
+        }
+        &:hover{
+            .quote{
+                right: 50%;
+                @include transformX(50%);
+            }
+        }
+    }
+    .quote{
+        position: absolute;
+        @include transition(0.8s);
+        right: 0px;
+        bottom: -30px;
+        span{
+            width: 60px;
+            height: 60px;
+            i{
+                font-weight: 900;
+                font-size: 29px;
+                color: $white;
+                margin-left: 4px;
+            }
+            line-height: 73px;
+            text-align: center;
+            @include border-radius(50%);
+            display: block;
+            background-color: $primary;
+        }
+    }
+    h4{
+        font-weight: 600;
+        font-size: 26px;
+        @include sm{
+            font-size: 22px;
+        }
+        color: #000;
+    }
+    .describtion{
+        p{
+            font-weight: 400;
+            font-size: 24px;
+            color: $text;
+            line-height: 142%;
+            @include sm{
+                font-size: 18px;
+            }
+        }
+    }
+    .stars{
+        position: relative;
+        padding-bottom: 25px;
+        border-bottom: 1px solid $border;
+        i{
+            font-size: 24px;
+            @include sm{
+                font-size: 22px;
+            }
+        }
+    }
+    .user_meta_info{
+        h5{
+            font-weight: 500;
+            font-size: 18px;
+            @include sm{
+                font-size: 16px;
+            }
+            color: $black;
+        }
+        p{
+            font-weight: 400;
+            margin-top: 10px;
+            font-size: 17px;
+            @include sm{
+                font-size: 14px;
+                margin-top: 0px;
+            }
+            color: $text;
+        }
+    }
+}

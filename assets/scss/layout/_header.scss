@@ -1,0 +1,217 @@
+/*----------------------------------------*/
+/* 10. HEADER CSS START
+/*----------------------------------------*/
+
+
+@keyframes sticy-menu {
+    0% {
+     top: -80px;   
+       
+    }
+    100% {
+     top: 0; 
+    }
+}
+.header-menu-wrapper{
+  @include sm{}
+}
+
+header.sticky {
+  
+    position: fixed;
+    width: 100%;
+    background-color: #172427;
+    right: 0;
+    left: 0;
+    top: 0;
+    animation: sticy-menu 1s;
+    animation-direction: inherited;
+    z-index: 99;
+    padding: 10px 0;
+    // transition: all 0.6s ease-in-out;
+
+    
+    
+  .logo-wrapper{
+    .logo{
+      .standard-logo{
+        display: none;
+      }
+      .sticky-logo{
+        display: block;
+      }
+    }
+  }
+}
+
+.header__wrapper{
+ 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+ 
+  background-color: transparent;
+  z-index: 9;
+
+  .logo-wrapper{
+    .logo{
+      .sticky-logo{
+        display: none;
+      }
+    }
+  }
+}
+
+.header__right{
+  @include lg{
+    @include flex(row, space-between, center);
+    gap: 20px;
+  }
+  @include md{
+    @include flex(row, space-between, center);
+    gap: 20px;
+  }
+  @include sm{
+    @include flex(row, space-between, center);
+    gap: 20px;
+  }
+  .user-with-btn{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .user-icon{
+      height: 45px;
+      width: 45px;
+      border-radius: 50%;
+      border: 1px solid $white;
+      padding: 5px;
+      color: $white;
+      font-size: 16px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      &.style_1{
+        color: $black;
+        border: 1px solid $black;
+      }
+
+      &::after{
+        position: absolute;
+        content: "";
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background-color: green;
+        border: 1px solid $white;
+        bottom: 5px;
+        right: -3px;
+
+      }
+    }
+  }
+
+  .primary-btn{
+    @include lg{
+      display: none;
+    }
+    @include md{
+      display: none;
+    }
+    @include sm{
+      display: none;
+    }
+  }
+}
+
+
+
+.offcanvas.offcanvas-end{
+  width: 310px;
+  padding-top: 6px;
+}
+
+
+.menu--open {
+  border: none;
+  font-size: 24px;
+  background: transparent;
+  display: none;  
+  border: 1px solid $white;
+  color: $white;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  height: 42px;
+  width: 45px;
+
+  @include lg{
+    display: flex;
+    &.style_1{
+      color: $black;
+      border: 1px solid $black;
+    }
+  }
+  @include md{
+    display: flex;
+    &.style_1{
+      color: $black;
+      border: 1px solid $black;
+    }
+  }
+  @include sm{
+    display: flex;
+    &.style_1{
+      color: $black;
+      border: 1px solid $black;
+    }
+  }
+
+  &.error-page{
+    border-color: $black;
+    color: $black;
+  }
+}
+
+.header__area{
+  &.style_01{
+    background-color: $white;
+    ul{
+      li{
+        &.has-dropdown{
+          &::after{
+            color: $black;
+            
+          }
+        }
+        a{
+          color: $black;
+           &:hover{
+            color: $primary;
+          }
+        }
+        ul{
+          li{
+            a{
+              color: $black !important;
+              &:hover{
+                color: $white !important;
+              }
+            }
+          }
+        }
+        &:hover{
+               &.has-dropdown{
+          &::after{
+            color: $primary !important;
+            
+          }
+        }
+            }
+      }
+    }
+  }
+}

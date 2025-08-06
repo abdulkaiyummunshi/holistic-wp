@@ -1,0 +1,146 @@
+
+/*-----------------------------------------------------------------------------------
+
+  Theme Name: Clario – Digital, Consulting & Lawyer Agency HTML Template
+  Author: SoftCrafty
+  Support: gosoftcrafty@gmail.com
+  Description: 
+  Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+    /************ TABLE OF CONTENTS ***************
+
+    01. VARIBALES DECLARARION
+    02. Responsive Breakpoint
+    03. SPACING
+    04. TYPOGRAPHY CSS START
+    05. THEME CSS
+    06. BUTTON CSS
+    07. TITLE CSS
+    08. LOADING
+    09. MENU CSS
+    10. HEADER CSS 
+    11. HERO / BANNER CSS
+    12. LISTING AREA CSS
+    13. FING HOLISTIC CSS
+    14. TOP CITIES
+    15. MORE INFO
+    16. RESOURCE EDUCATION
+
+    17. SLIDER CSS
+    18. TEAM DETAILS
+    19. ABOUT AREA
+    20. ERROR / 404 AREA
+    21. BRAND CSS
+    22. TEAM AREA
+    23. PORTFOLIO 
+    24. PORTFOLIO DETAILS
+    25. BLOG AREA
+    26. PRICING AREA
+    27. CONTACT AREA
+    28. FAQ AREA
+    29. FOOTER AREA
+    
+
+**********************************************/
+
+
+@import "utils/variables";
+@import "utils/responsive";
+@import "utils/space";
+@import "utils/typography";
+@import "utils/theme";
+@import "components/button";
+@import "components/title";
+@import "components/loading";
+@import "components/menu";
+@import "./utils/mixin";
+@import "./utils/animation";
+
+// layout
+@import "layout/header";
+@import "layout/hero";
+@import "layout/listing-area";
+@import "layout/find-holistic";
+@import "layout/top-cities";
+@import "layout/more-info";
+@import "layout/resource-education";
+@import "layout/how-work";
+@import "./layout/companylogo";
+@import "./layout/blog-news";
+@import "./layout/footer1";
+@import "./layout/subscribe";
+@import "./layout/faq";
+@import "layout/testimonial";
+// <<<<<<< HEAD
+@import "./unit_test/blog";
+@import "./unit_test/blog-details";
+@import "./unit_test/blog-sidebar";
+@import "./unit_test/pagination";
+@import "./unit_test/sidebar";
+// @import "./unit_test/menu-testing";
+// @import "./unit_test/unit-test";
+// @import "./unit_test/wp-font-spacing";
+// @import "./unit_test/pages";
+
+// Pages
+@import "./pages/listing.scss";
+@import "./pages/about.scss";
+@import "./pages/service.scss";
+@import "./pages/contact.scss";
+@import "./pages/user_dashboard/guest.scss";
+@import "./pages/user_dashboard/owner.scss";
+
+#pagination-wrapper{
+  margin-top: 80px;
+  ul{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    li{
+      &:nth-child(1){
+        span{
+          display: inline-block;
+          width: 50px;
+          height: 50px;
+          line-height: 50px;
+          background: transparent;
+          border: 1px solid $border;
+          border-radius: 50%;
+          font-weight: 500;
+          font-size: 18px;
+          color: $black;
+          &:hover{
+            background-color: $primary;
+            color: $white;
+          }
+        }
+      }
+      &:last-child{
+        a{
+          color: $primary;
+        }
+      }
+    }
+  }
+    a{
+          display: inline-block;
+          width: 50px;
+          height: 50px;
+          line-height: 50px;
+          background: transparent;
+          border: 1px solid $border;
+          border-radius: 50%;
+          font-weight: 500;
+          font-size: 18px;
+          color: $black;
+          &:hover{
+            background-color: $primary;
+            color: $white;
+          }
+    }
+}
+
+

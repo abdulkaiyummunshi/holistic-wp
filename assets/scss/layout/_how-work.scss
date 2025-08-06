@@ -1,0 +1,159 @@
+
+// How work area start
+
+.how-work{
+    margin-top: 150px;
+    padding-bottom: 150px;
+     @include lg{
+        margin-top: 120px;
+        padding-bottom: 120px;
+    }
+    @include md{
+        margin-top: 100px;
+        padding-bottom: 100px;
+    }
+    @include sm{
+        padding-bottom: 72px;
+        margin-top: 80px;
+    }
+    position: relative;
+}
+
+.shape-women{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    @include nesthub{
+        height: 700px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+.work-img{
+    padding: 50px;
+    @include nesthubmax{
+        width: 45%;
+    }
+    @include nesthub{
+        width: 45%;
+    }
+    @include sm{
+        padding: 20px;
+    }
+    position: relative;
+
+    img{
+        border-radius: 20px;
+    }
+
+    .shape-dot{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        animation: moving-dots 20s linear infinite;
+        @include sm{
+            width: 200px;
+            height: 200px;
+        }
+
+    }
+    .line{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+}
+
+@keyframes moving-dots {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(0, -40px);
+  }
+  50% {
+    transform: translate(-40px, -40px);
+  }
+  75% {
+    transform: translate(-40px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+
+.how-work-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 120px;
+    // @include nesthubmax{
+    //     gap: 80px;
+    // }
+    @include nesthub{
+        gap: 75px;
+    }
+    @include sm{
+        gap: 40px;
+    }
+}
+
+.tab-btn-wrapper{
+    border: 1px solid $border;
+    border-radius: 999px;
+    padding: 10px;
+    width: fit-content;
+    margin-top: 25px;
+
+    button{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        color: $black;
+        border-radius: 50px;
+        padding: 10px 30px;
+        border: none;
+        background-color: transparent;
+
+        &.active{
+            background-color: $primary;
+            color: $white;
+        }
+    }
+}
+
+.work-content{
+    ul{
+        margin-top: 30px;
+
+        li{
+
+            font-size: 26px;
+            font-weight: 400;
+            line-height: 36px;
+            @include sm{
+                font-size: 22px;
+            }
+            color: $black;
+
+            span{
+                color: $primary;
+                margin-right: 20px;
+                font-size: 18px;
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                background-color: #F9F9F9;
+            }
+        }
+    }
+}

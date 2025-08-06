@@ -1,0 +1,290 @@
+/*----------------------------------------*/
+/*  11. HERO CSS START
+/*----------------------------------------*/
+
+
+.banner-bg{
+   background: linear-gradient(rgba(17, 17, 17, 0.6), rgba(17, 17, 17, 0.6)),
+  url("../imgs/hero/banner-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 870px;
+  position: relative;
+
+
+  
+}
+
+.banner-content{
+  
+  padding-top: 170px;
+
+  @include xs{
+    padding-top: 120px;
+  }
+
+  p{
+    color: $white;
+
+    br{
+      @include sm{
+        display: none;
+      }
+    }
+  }
+  
+}
+.banner-title{
+  font-size: 74px;
+  color: $white;
+  line-height: 1;
+  font-weight: 400; 
+  margin-bottom: 30px;
+
+  @include lg{
+    font-size: 64px;
+  }
+  @include md{
+    font-size: 54px;
+  }
+
+  @include sm{
+    font-size: 48px;
+  }
+  @include xxs{
+    font-size: 42px;
+  }
+}
+
+
+.btns{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+
+  @include xxs{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+}
+
+.banner-search-container{
+  background-color: $white;
+  border-radius: 20px;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 30px 40px;
+  @include nesthub{
+    padding: 30px 82px 30px 40px;
+  }
+  display: grid;
+  align-items: center;
+  gap: 10px;
+  grid-template-columns: 24% 19% 19% 19% auto;
+  margin-top: 60px;
+
+  @include xl{
+    grid-template-columns: 22% 18% 18% 18% auto;
+  }
+  @include md{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include sm{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include xxs{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  p{
+    color: $black;
+    text-align: left;
+  }
+
+  .nice-select{
+    height: 48px;
+    border: none;
+    border-radius: 50px;
+    background-color: #F9F9F9;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+
+    @include xs{
+      padding-left: 10px;
+    }
+
+    span{
+      color: $black;
+    }
+  }
+
+  button{
+    height: 55px;
+    width: max-content;
+    
+  }
+
+}
+
+
+.service-card-container{
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: -100px;
+  z-index: 5;
+ 
+  @include lg{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    place-items: center;
+    margin-top: -260px;
+    
+  }
+
+  @include md{
+    margin-top: -205px;
+    gap: 30px;
+  }
+  @include sm{
+    margin-top: -100px;
+    gap: 20px;
+  }
+
+  @include xxs{
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    margin-top: 60px;
+  }
+
+  .card-item{
+    background-color: $white;
+    border-radius: 20px;
+    padding: 15px 0px 40px;
+    width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0px 5px 60px 0px #0000000D;
+
+    @include xl{
+      width: 250px;
+    }
+
+    @include lg{
+      border: 1px solid $border;
+    }
+    
+
+    @include xs{
+      width: 100%;
+      gap: 10px;
+    }
+
+
+    .total-item{
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 24px;
+      color: $text;
+    }
+
+    .card-title{
+      font-size: 26px;
+      line-height: 34px;
+      font-weight: 600;
+      color: $black;
+
+      @include xl{
+        font-size: 24px;
+        line-height: 1;
+      }
+
+      @include xs{
+        font-size: 20px;
+      }
+
+      &:hover{
+        a {
+          color: $primary;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+.video-btn{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  .icon{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: $white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    transition: all 0.3s;
+  }
+
+  .text{
+    font-family: $outfit-font;
+    font-weight: 500;
+    color: $white;
+    text-decoration: underline;
+    font-size: 18px;
+    @include md{
+      display: none;
+    }
+  }
+  
+
+  &:hover{
+    color: $primary;
+    .icon{
+      background-color: $primary;
+      color: $white;
+    }
+  }
+}
+
+.banner-img{
+  position: absolute;
+  bottom: 0;
+  right: 80px;
+
+  @include xxl{
+    right: 0px;
+  }
+  @include lg{
+    max-width: 55%;
+  }
+  @include sm{
+    display: none;
+  }
+}
+
+
+
+
+
+

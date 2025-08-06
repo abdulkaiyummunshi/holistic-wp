@@ -1,0 +1,74 @@
+
+/*----------------------------------------*/
+/*  02. RESPONSIVE BREAKPOINT
+/*----------------------------------------*/
+
+/* Large screens  custom container*/
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1400px !important;
+    }
+}
+
+
+
+// Small devices
+@mixin xxs {
+  @media only screen and (max-width:479px){
+      @content;
+  }
+}
+@mixin xs {
+  @media only screen and (max-width:576px){
+      @content;
+  }
+}
+@mixin sm {
+  @media only screen and (max-width: 767px){
+      @content;
+  }
+}
+// Medium devices
+@mixin md {
+  @media only screen and (max-width: 991px) {
+      @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media only screen and (max-width: 1199px) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media only screen and (max-width: 1399px) {
+    @content;
+  }
+}
+// double Extra large devices
+@mixin xxl {
+  @media only screen and (max-width: 1599px) {
+    @content;
+  }
+}
+@mixin xxxl {
+  @media only screen and (min-width: 1600px) {
+    @content;
+  }
+}
+
+// Nest Hub Device
+@mixin nesthub() {
+  @media only screen and (min-width: 992px) and (max-width: 1024px) {
+    @content;
+  }
+}
+// Nest Hub Max Device
+@mixin nesthubmax() {
+  @media only screen and (min-width: 1025px) and (max-width: 1280px) {
+    @content;
+  }
+}

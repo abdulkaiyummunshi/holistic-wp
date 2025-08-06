@@ -1,0 +1,159 @@
+
+// top cities area
+
+.top-cities{
+    margin-top: 150px;
+     @include lg{
+        margin-top: 120px;
+    }
+    @include md{
+        margin-top: 202px;
+    }
+    @include sm{
+        margin-top: 80px;
+    }
+    .row{
+        &.style_1{
+            @include sm{
+                gap: 20px;
+            }
+            @include md{
+                gap: 30px;
+                justify-content: center !important;
+            }
+            @include nesthub{
+                justify-content: center;
+                gap: 30px;
+                .col-lg-3{
+                    width: calc(50% - 30px) !important;
+                    &.style_1{
+                        justify-content: flex-end !important;
+                    }
+                    &.style_2{
+                        justify-content: flex-start !important;
+                    }
+                    .city{
+                        width: 100% !important; 
+                    }
+                }
+            }
+        }
+    }
+}
+
+.city{
+    box-shadow: 0 5px 60px 0 rgba(0, 0, 0, 0.05);
+    background: $white;
+    @include transition(0.6s);
+    max-height: 401px;
+    @include sm{
+        max-width: 100%;
+    }
+    max-width: 320px;
+     position: relative;
+     overflow: hidden;
+    .city-img{
+        max-height: 260px;
+        
+        overflow: hidden;
+        @include transition(0.6s);
+        box-shadow: 0px 5px 60px 0px #0000000D;
+        position: relative;
+        @include border-radius(10px 10px 0px 0px);
+        .overly{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            @include border-radius(20px 20px 10px 10px);
+        }
+        img{
+            @include border-radius(10px 10px 0px 0px);
+            width: 100%;
+        }
+    }
+
+
+
+    &:hover{
+        max-height: 401px;
+
+        @include border-radius(10px);
+        @include sm{
+            height: 401px !important;
+        }
+       .city-img{
+        max-height: 1000px;
+        @include nesthubmax{
+            height: 401px !important;
+            img{
+                height: 401px;
+            }
+        }
+         @include border-radius(10px);
+         img{
+             @include border-radius(10px);
+         }
+        .overly{
+            background-color: #11111170;
+        }
+
+       }
+       .city-link{
+                width: 100%;
+                height: 100%;
+                flex-direction: column;
+                justify-content: center;
+                gap: 20px;
+                transform: translateY(-100%);
+                -webkit-transform: translateY(-100%);
+                -moz-transform: translateY(-100%);
+                -ms-transform: translateY(-100%);
+                -o-transform: translateY(-100%);
+                h3{
+                    color: $white;
+                }
+                p{
+                    color: $white;
+                }
+                a{
+                    color: $white;
+                    background-color: $primary;
+                }
+}
+    }
+}
+
+.city-link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    min-height: 140px;
+    @include transition(0.6s);
+    .city-name{
+        h3{
+            font-weight: 600;
+            font-size: 26px;
+            line-height: 34px;
+            color: $black;
+            @include transition(0.5s);
+        }
+
+    }
+    a{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        @include transition(0.5s);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #F9F9F9;
+        color: $primary;
+    }
+    p{
+        margin-top: 8px;
+    }
+}

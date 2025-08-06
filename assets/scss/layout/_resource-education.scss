@@ -1,0 +1,58 @@
+
+
+// Resource and Education start section
+@include nesthubmax{
+    .nestmax-none{
+        display: none;
+    }
+}
+.resource-education{
+    margin-top: 150px;
+     @include lg{
+        margin-top: 120px;
+    }
+    @include md{
+        margin-top: 100px;
+    }
+    @include sm{
+        margin-top: 80px;
+    }
+    .row{
+        &.style_1{
+            @include sm{
+                gap: 20px;
+            }
+        }
+    }
+}
+
+.resource-item{
+    padding: 40px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    hr{
+        background-color: $border;
+        height: 2px;
+    }
+}
+
+.icon-title{
+
+   display: flex;
+   align-items: center;
+   gap: 20px;
+   padding-bottom: 15px;
+   border-bottom: 2px solid $border;
+   margin-bottom: 20px;
+
+    h4{
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 34px;
+        color: $black;
+        padding: 8px 20px;
+        border-left: 2px solid $border;
+    }
+
+}
+

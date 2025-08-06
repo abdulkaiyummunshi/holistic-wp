@@ -1,0 +1,304 @@
+
+// Latest listing section
+
+
+.listing-area{
+    position: relative;
+    margin-top: 150px;
+    margin-bottom: 284px !important;
+    @include lg{
+        margin-top: 120px;
+    }
+     @include nesthub{
+        margin-bottom: 260px !important;
+    }
+    @include md{
+        margin-top: 100px;
+        margin-bottom: 200px !important;
+    }
+    @include sm{
+        margin-top: 80px;
+        margin-bottom: 166px !important;
+    }
+    .swiper-pagination{
+        bottom: -90px;
+    }
+     .swiper-pagination-bullet {
+           background-color: $gray1;
+            width: 50px;
+            height: 10px;
+            @include border-radius(10px);
+            opacity: 1;
+            @include transition(0.4s);
+
+        }
+
+        .swiper-pagination-bullet-active {
+            width: 142px;
+            height: 10px;
+            background-color: $primary;
+
+        }
+        .swiper-button-prev{
+            display: none;
+        }
+        .swiper-button-next{
+            display: none;
+        }
+}
+
+.listing-item{
+
+    border-radius: 20px;
+    border: 1px solid transparent;
+    padding: 20px;
+    background-color: $white;
+    box-shadow: 0 5px 60px 0 rgba(0, 0, 0, 0.05);
+    transition: all 0.3s;
+
+    @include xxs{
+        padding: 15px;
+    }
+
+    &-content{
+        padding: 20px 20px 20px;
+        
+
+        @include sm{
+            padding: 15px;
+        }
+        @include xxs{
+            padding: 0px;
+        }
+
+        .title-stars{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            h4{
+                font-weight: 600;
+                font-size: 26px;
+                line-height: 34px;
+                color: $black;
+                transition: all 0.3s;
+
+                @include xl{
+                    font-size: 24px;
+                }
+
+                &:hover{
+                    color: $primary;
+                }
+            }
+
+            .stars{
+                margin-bottom: 0;
+                i{
+                    color: $star;
+                }
+            }
+
+        }
+
+        p{
+            margin-top: 10px;
+            @include nesthub{
+                font-size: 14px;
+            }
+        }
+
+        .location,
+        .clock{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            p{
+                margin-top: 0;
+                font-size: 14px;
+                @include nesthubmax{
+                    font-size: 13px;
+                }
+                line-height: 20px;
+            }
+        }
+        .location{
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        .read-more{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 25px;
+
+            .contact-list{
+                display: flex;
+                gap: 10px;
+                a{
+                    i{
+                        margin-left: 0;
+                    }
+
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 50%;
+                    background-color: #F9F9F9;
+                    font-size: 18px;
+                    color: $primary;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: all 0.3s;
+                    position: relative;
+                    @include nesthub{
+                        width: 30px;
+                        height: 30px;
+                        font-size: 14px;
+                    }
+                    bottom: 0;
+
+                    &:hover{
+                        background-color: $primary;
+                        color: white;
+                        bottom: 5px;
+                    }
+
+                }
+            }
+        }
+    }
+
+    figure{
+        position: relative;
+        overflow: hidden;
+        border-radius: 20px;
+
+        img{
+            width: 100%;
+            transition: all 0.3s;
+        }
+    }
+    .service-tag{
+        position: absolute;
+        top: 20px;
+        left: -150px;
+        background-color: $white;
+        border-radius: 20px;
+        padding: 5px 20px;
+        transition: all 0.5s;
+
+        h4{
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 28px;
+            color: $black;
+        }
+    }
+    .popular-tag{
+        position: absolute;
+        top: 20px;
+        right: -10px;
+        background-color: $primary;
+        border-radius: 20px;
+        padding: 5px 25px;
+        transition: all 0.5s;
+
+        h4{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 21px;
+            color: $white;
+        }
+    }
+
+    .user{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        position: absolute;
+        bottom: 24px;
+        left: 20px;
+
+        @include xs{
+            bottom: 15px;
+            left: 15px;
+        }
+        img{
+            border-radius: 50%;
+            object-fit: cover;
+            height: 50px;
+            width: 50px;
+        }
+        h4{
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 28px;
+            color: $white;
+        }
+    }
+
+    &:hover{
+        border-color: $primary;
+        background-color: $gray1;
+
+        figure{
+            img{
+                transform: scale(1.05);
+            }
+        }
+
+        .service-tag{
+            left: 20px;
+        }
+    }
+}
+.layout_view{
+    .listing-item{
+    @include flex(row, flex-start, center);
+    @include sm{
+        @include flex(column, center, center);
+    }
+    }
+}
+
+.listing_details_area{
+    .primary-btn{
+        padding: 10px 13px;
+        font-size: 15px;
+    }
+    .listing-item{
+        &-content{
+            @include nesthubmax{
+                padding: 20px 10px;
+            }
+            @include nesthub{
+                padding: 0px;
+            }
+             h4{
+                font-weight: 600;
+                font-size: 26px;
+                @include nesthubmax{ 
+                    font-size: 20px !important;
+                }
+                @include nesthub{
+                    font-size: 16px;
+                }
+                line-height: 34px;
+                color: $black;
+                transition: all 0.3s;
+
+                @include xl{
+                    font-size: 24px;
+                }
+
+                &:hover{
+                    color: $primary;
+                }
+            }
+            
+        }
+    }
+}

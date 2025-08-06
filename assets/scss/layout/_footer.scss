@@ -1,0 +1,399 @@
+
+/*----------------------------------------*/
+/* 29. FOOTER AREA
+/*----------------------------------------*/
+
+.footer-sec{
+  background-color: $section-bg;
+  padding-top: 120px;
+
+  @include md{
+    padding-top: 80px;
+  }
+
+  &.inner{
+    margin-top: 160px;
+
+    @include xl{
+      margin-top: 120px;
+    }
+    @include md{
+      margin-top: 80px;
+    }
+  }
+}
+
+.footer-clario{
+  font-weight: 400;
+  font-size: 200px;
+  color: #2D4246;
+  line-height: 1;
+  text-align: center;
+  margin-top: 90px;
+
+  @include xl{
+    margin-top: 70px;
+  }
+  @include md{
+    margin-top: 50px;
+  }
+  @include sm{
+    margin-top: 30px;
+    font-size: 180px;
+  }
+  @include xs{
+    font-size: 150px;
+  }
+  @include xxs{
+    font-size: 100px;
+  }
+
+}
+
+.footer-widget{
+  
+  .footer-title{
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+    color: $white;
+    margin-top: 30px;
+    margin-bottom: 70px;
+
+    @include xl{
+      font-size: 34px;
+    }
+    @include lg{
+      margin-bottom: 50px;
+    }
+    @include md{
+      font-size: 30px;
+      line-height: 37px;
+    }
+    @include sm{
+      font-size: 26px;
+    }
+
+    @include xs{
+      width: 75%;
+    }
+    @include xxs{
+      width: 100%;
+    }
+  }
+
+  &.widget_nav_menu{
+
+    &.ex-mt{
+      @include xs{
+        margin-top: 25px;
+      }
+    }
+    .footer-widget-title{
+      font-size: 24px;
+      line-height: 34px;
+      color: $white;
+    }
+
+    ul{
+      margin-top: 25px;
+      @include  md{
+        margin-top: 20px;
+      }
+      @include xs{
+        margin-top: 10px;
+      }
+
+      li{
+        line-height: 46px;
+
+        @include xs{
+          line-height: 35px;
+        }
+
+        a{
+          font-family: $outfit-font;
+          font-size: 16px;
+          color: $text;
+        }
+
+        &:hover{
+          a{
+            color: $white;
+          }
+        }
+      }
+    }
+
+    .widget-location-wrapper{
+      margin-top: 35px;
+
+      @include xs{
+        margin-top: 18px;
+      }
+
+      .location, .phone, .email{
+        margin-bottom: 30px;
+
+        @include xs{
+          margin-bottom: 17px;
+        }
+        a{
+          font-family: $outfit-font;
+          font-size: 16px;
+          line-height: 26px;
+          font-weight: 400;
+          color: $text;
+          display: flex;
+          gap: 20px;
+
+          &:hover{
+            color: $white;
+          }
+          
+        }
+      }
+      .email{
+        margin-bottom: 0;
+      }
+    }
+
+    .widget-newsletter{
+      margin-top: 35px;
+      @include xs{
+        margin-top: 18px;
+      }
+
+      p{
+        font-family: $outfit-font;
+        font-size: 16px;
+        line-height: 26px;
+        color: $text;
+      }
+
+      form{
+        border: 1px solid $border;
+        border-radius: 10px;
+        padding: 3px;
+        height: 50px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        margin-top: 28px;
+        margin-bottom: 18px;
+
+        input{
+          border: none;
+          background-color: transparent;
+          padding: 0 8px;
+          color: $white;
+          font-size: 16px;
+          width: 100%;
+
+          &::placeholder{
+            color: $text;
+          }
+        }
+        button{
+          height: 40px;
+          width: 48px;
+          padding: 0;
+          border: transparent;
+
+          i{
+            margin-left: 0;
+          }
+        }
+      }
+
+      .checkbox{
+
+        input{
+          background: transparent;
+        }
+
+        span{
+          font-family: $outfit-font;
+          font-size: 16px;
+          line-height: 26px;
+          color: $text;
+          font-weight: 400;
+          margin-left: 5px;
+        }
+      }
+
+    }
+
+  }
+  
+}
+
+
+
+.footer-bottom{
+  border-top: 1px solid $border;
+  padding: 26px 0;
+  margin-top: -30px;
+
+  @include xs{
+    margin-top: -18px;
+  }
+  @include xxs{
+    margin-top: -12px;
+  }
+
+  .copyright{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include xs{
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    p{
+      font-family: $outfit-font;
+      font-weight: 400;
+      font-size: 18px;
+      color: $text;
+
+      @include sm{
+        font-size: 16px;
+      }
+    }
+
+    ul{
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      @include sm{
+        gap: 10px;
+      }
+
+      li{
+        font-family: $outfit-font;
+        font-weight: 400;
+        font-size: 18px;
+        color: $text;
+
+        @include sm{
+        font-size: 16px;
+        }
+
+        a{
+          color: $text;
+
+          &:hover{
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+// home 2
+
+.social-media-container{
+  display: flex;
+  gap: 7px;
+
+  &.mt-45{
+    margin-top: 45px;
+  }
+  a {
+    height: 40px;
+    width: 40px;
+    border-radius: 6px;
+    font-size: 18px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    transition: 0.3s ease-in-out;
+
+    &:hover{
+      bottom: 5px;
+    }
+  }
+  .facebook{
+    background-color: #1877F2;
+  }
+  .twitter{
+    background-color: $white;
+    color: $black;
+  }
+  .linkedin{
+    background-color: #0A66C2;
+  }
+  .pinterest{
+    background-color: #CB2027;
+  }
+
+  &.style-2{
+    a{
+      border-radius: 50%;
+    }
+    .twitter{
+      color: $white;
+      background-color: $black;
+    }
+  }
+} 
+
+.footer-sec{
+  &.home-2{
+
+    .social-media-container{
+      @include md{
+        margin-top: 30px;
+      }
+    }
+
+    .footer-widget{
+      .footer-text{
+        font-family: $outfit-font;
+        font-size: 18px;
+        line-height: 28px;
+        color: $text;
+        margin-top: 35px;
+
+        @include md{
+          margin-top: 15px;
+        }
+      }
+    }
+    .widget-instagram{
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+
+      @include xxs{
+        margin-top: 25px;
+      }
+      img{
+        border-radius:6px;
+
+        @include xxs{
+          width: 49px;
+        }
+      }
+    }
+
+    .col-4{
+      @include xxs{
+        width: 50%;
+      }
+    }
+    .col-xs-4{
+      @include xxs{
+        width: 50%;
+      }
+    }
+  }
+}

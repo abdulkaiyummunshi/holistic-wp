@@ -1,0 +1,24 @@
+.company_logo{
+    .logo-carousel{
+        
+    @include flex(row, center, center);
+    gap: 10px;
+    overflow: hidden;
+
+        .logo_img{
+            margin-left: 20px;
+        width: calc(100% / 6);
+        height: 100px;
+        
+        img{
+                
+            width: fit-content;
+            height: 100%;
+            object-fit: contain;
+            &:hover{
+                animation: tada 1s linear infinite;
+            }
+        }
+    }
+    }
+}
