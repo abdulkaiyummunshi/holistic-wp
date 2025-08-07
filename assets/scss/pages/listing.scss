@@ -328,6 +328,9 @@
                 @include border-radius(999px);
                 font-weight: 400;
                 font-size: 17px;
+                &:focus{
+                    border: none !important;
+                }
                 color: $text;
                 &::placeholder{
                     font-weight: 400;
