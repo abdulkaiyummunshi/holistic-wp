@@ -93,7 +93,6 @@
     &.list-view{
         figure{
             width: 600px !important;
-            
         }
     }
 }
@@ -167,24 +166,13 @@
         }
     }
 }
-.listing-container{
-    .ajax-listings-result{
-        .text-center{
-            padding: 20px;
-            margin-top: 20px;
-            background-color: gray;
-            @include border-radius(10px);
-        }
-    }
-}
+
 .list-view {
     .listing-item-hc {
     gap: 10px !important;
     figure{
         width: 600px;
-        
     }
-    
 }
 }
 .service-tag{
@@ -383,7 +371,6 @@
                     width: 40px;
                     height: 40px;
                     line-height: 40px;
-
                 }
             }
             .price_range{

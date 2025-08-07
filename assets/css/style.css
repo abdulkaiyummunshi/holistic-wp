@@ -28889,7 +28889,12 @@ ul.children {
 .listing-container .ajax-listings-result .text-center {
   padding: 20px;
   margin-top: 20px;
-  background-color: gray; }
+  background-color: gray;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px; }
 
 .list-view .listing-item-hc {
   gap: 10px !important; }
