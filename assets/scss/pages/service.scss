@@ -152,11 +152,14 @@
 
 
 
-$primary-text-color: #555;
-$secondary-text-color: #888;
-$border-color: #eee;
-$icon-color: #ccc;
-$background-color: #fafafa;
+
+.mc4wp-response{
+    .mc4wp-alert{
+        p{
+            color: $white;
+        }
+    }
+}
 .no_results_area{
     padding: 0px 20px;
     .no_results_container {

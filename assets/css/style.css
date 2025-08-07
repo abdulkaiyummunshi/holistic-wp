@@ -30312,6 +30312,9 @@ nav.main-menu li.active > a:hover {
       margin-right: 15px;
       color: #00AF78; }
 
+.mc4wp-response .mc4wp-alert p {
+  color: #fff; }
+
 .no_results_area {
   padding: 0px 20px; }
   .no_results_area .no_results_container {
