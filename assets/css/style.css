@@ -30014,6 +30014,9 @@ input[type="text"]:focus,
 body.dokan-dashboard .dokan-form-control:focus {
   border: none !important; }
 
+nav.main-menu li.active > a:hover {
+  color: white !important; }
+
 .our_mission_area .mission_content b {
   font-weight: 500;
   font-size: 18px;
