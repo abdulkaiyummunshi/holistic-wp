@@ -28842,7 +28842,7 @@ ul.children {
         color: #00AF78; }
 
 .listing-wrapper.list-view figure {
-  width: 600px; }
+  width: 600px !important; }
 
 .listing_details_area_hc .sidebar .top_category ul li a {
   padding: 12px 30px !important; }
