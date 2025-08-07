@@ -250,6 +250,7 @@
         }
     }
     .sidebar{
+       
         padding: 0px !important;
         .widget{
             @include border-radius(20px);
@@ -315,9 +316,7 @@
                 @include flex(column, flex-start, flex-start);
                 gap: 20px;
             }
-            input:focus, input[type="text"]:focus{
-                border: none !important;
-            }
+            
             input{
                 outline: none;
                 border: none;
@@ -620,6 +619,9 @@
             }
 
         }
+    input:focus, input[type="text"]:focus{
+                border: none !important;
+            }
     }
     .listing_details_content{
         padding-left: 10px;
