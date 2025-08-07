@@ -29030,6 +29030,8 @@ ul.children {
     justify-content: flex-start;
     align-items: flex-start;
     gap: 20px; }
+  .listing_details_area .sidebar .advanced_search input:focus, .listing_details_area .sidebar .advanced_search input[type="text"]:focus {
+    border: none !important; }
   .listing_details_area .sidebar .advanced_search input {
     outline: none;
     border: none;
@@ -32746,3 +32748,4 @@ ul.children {
       color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
+                                                                                                                       

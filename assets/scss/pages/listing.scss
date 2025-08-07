@@ -315,6 +315,9 @@
                 @include flex(column, flex-start, flex-start);
                 gap: 20px;
             }
+            input:focus, input[type="text"]:focus{
+                border: none !important;
+            }
             input{
                 outline: none;
                 border: none;
