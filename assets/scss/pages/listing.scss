@@ -89,6 +89,14 @@
         }
     }
 }
+.listing-wrapper{
+    &.list-view{
+        figure{
+            width: 600px;
+            
+        }
+    }
+}
 .listing_details_area_hc{
     .sidebar{
         .top_category{
@@ -114,10 +122,22 @@
         h4{
             width: 64% !important;
             line-height: 29px;
+            @include sm{
+                font-size: 20px !important;
+            }
         }
         .stars{
             width: 35% !important;
             font-size: 16px !important;
+            @include sm{
+                font-size: 12px !important;
+            }
+        }
+        p{
+            @include sm{
+                    font-size: 14px !important;
+                  line-height: 23px !important;
+            }
         }
     }
 }
@@ -125,7 +145,7 @@
     .col-lg-6{
         @include sm{
             width: 50% !important;
-            
+
         }
     }
 }
