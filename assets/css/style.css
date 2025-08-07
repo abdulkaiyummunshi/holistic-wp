@@ -24967,6 +24967,9 @@ header.sticky {
     animation: up-down 2s ease-in-out infinite alternate;
     -webkit-animation: up-down 2s ease-in-out infinite alternate; }
 
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .elementor-4006 .elementor-element.elementor-element-f44d8d8 .more-info {
+    margin-top: 0px !important; } }
 @media only screen and (min-width: 1025px) and (max-width: 1280px) {
   .nestmax-none {
     display: none; } }
