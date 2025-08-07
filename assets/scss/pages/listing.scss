@@ -167,6 +167,11 @@
         }
     }
 }
+.listing-container{
+    .ajax-listings-result{
+        background-color: green;
+    }
+}
 .list-view {
     .listing-item-hc {
     gap: 10px !important;

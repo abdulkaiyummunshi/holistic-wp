@@ -28886,6 +28886,9 @@ ul.children {
   .listing-item-hc figure .service-tag h4 {
     margin: 0px !important; }
 
+.listing-container .ajax-listings-result {
+  background-color: g; }
+
 .list-view .listing-item-hc {
   gap: 10px !important; }
   .list-view .listing-item-hc figure {
