@@ -25001,6 +25001,11 @@ header.sticky {
     font-size: 18px;
     color: #646464; }
 
+.elementor-4006 .elementor-element.elementor-element-296432e .read-more {
+  transition: all 0.4s ease; }
+  .elementor-4006 .elementor-element.elementor-element-296432e .read-more:hover {
+    color: #00AF78 !important; }
+
 .how-work {
   margin-top: 150px;
   padding-bottom: 150px;
@@ -30306,6 +30311,34 @@ nav.main-menu li.active > a:hover {
     .service_details_area .service_contains .list_area ul li i {
       margin-right: 15px;
       color: #00AF78; }
+
+.no-results-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px 20px;
+  border-radius: 8px;
+  background-color: #fafafa;
+  margin: 20px auto;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); }
+  .no-results-container .no-results-icon {
+    margin-bottom: 20px; }
+    .no-results-container .no-results-icon .fas, .no-results-container .no-results-icon .far, .no-results-container .no-results-icon .fab {
+      font-size: 4rem;
+      color: #ccc; }
+  .no-results-container .no-results-text h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #555;
+    margin: 0 0 10px 0; }
+  .no-results-container .no-results-text p {
+    font-size: 1rem;
+    color: #888;
+    margin: 0;
+    line-height: 1.5; }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .send_message_area .row {

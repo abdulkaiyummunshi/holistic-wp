@@ -70,3 +70,10 @@ color: $text;
 }
 }
 
+.elementor-4006 .elementor-element.elementor-element-296432e .read-more {
+    @include transition(0.4s);
+    &:hover{
+        color: $primary !important;
+    }
+}
+
