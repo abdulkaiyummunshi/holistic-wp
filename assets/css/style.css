@@ -28888,10 +28888,6 @@ ul.children {
   .list-view .listing-item-hc figure {
     width: 600px; }
 
-.listing-container .text-center {
-  padding: 20px;
-  background-color: #00AF78; }
-
 .service-tag h4 {
   margin: 0px !important; }
 
@@ -29976,6 +29972,11 @@ ul.children {
 
 .top_category .listing-category-filter li a {
   padding: 13px 30px !important; }
+
+input:focus,
+input[type="text"]:focus,
+body.dokan-dashboard .dokan-form-control:focus {
+  border: none !important; }
 
 .our_mission_area .mission_content b {
   font-weight: 500;

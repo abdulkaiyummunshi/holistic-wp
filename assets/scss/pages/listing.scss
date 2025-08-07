@@ -171,12 +171,7 @@
     }
 }
 }
-.listing-container{
-    .text-center{
-        padding: 20px;
-        background-color: $primary;
-    }
-}
+
 .service-tag{
         h4{
             margin: 0px !important;
@@ -1324,4 +1319,11 @@
             }
         }
     }
+}
+
+
+input:focus,
+input[type="text"]:focus,
+body.dokan-dashboard .dokan-form-control:focus {
+  border: none !important;
 }
