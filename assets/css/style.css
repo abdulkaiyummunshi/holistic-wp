@@ -28012,6 +28012,11 @@ ul.children {
       background-color: #00AF78;
       color: #fff; }
 
+.blog-area .sidebar .search-bar .form-control {
+  border: 1px solid #E4E4E4 !important; }
+  .blog-area .sidebar .search-bar .form-control .form-control:focus {
+    box-shadow: none !important; }
+
 .basic-pagination ul {
   display: flex;
   align-items: center;
@@ -28859,7 +28864,7 @@ ul.children {
           font-size: 20px !important; } }
     .listing-item-hc-content .title-stars .stars {
       width: 35% !important;
-      font-size: 16px !important; }
+      font-size: 14px !important; }
       @media only screen and (min-width: 0px) and (max-width: 767px) {
         .listing-item-hc-content .title-stars .stars {
           font-size: 12px !important; } }

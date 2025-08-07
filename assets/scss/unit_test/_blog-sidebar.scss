@@ -1,6 +1,7 @@
 // $border: rgb(236, 236, 236);
 
 // blog and blog details page sidebar
+
 .blog-area{
   .widget_holistic_blog_search_widget {
     margin: 0px !important;
@@ -188,4 +189,11 @@
 
 }
 
+
+.blog-area .sidebar .search-bar .form-control{
+  border: 1px solid $border !important;
+  .form-control:focus {
+    box-shadow: none !important;
+  }
+}
    
