@@ -28888,6 +28888,10 @@ ul.children {
   .list-view .listing-item-hc figure {
     width: 600px; }
 
+.listing-container .text-center {
+  padding: 20px;
+  background-color: #00AF78; }
+
 .service-tag h4 {
   margin: 0px !important; }
 
