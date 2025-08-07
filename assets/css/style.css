@@ -24960,7 +24960,8 @@ header.sticky {
     margin-top: 25px;
     margin-bottom: 30px; }
   .more-info .info-content {
-    max-width: 580px; }
+    max-width: 580px;
+    width: 100% !important; }
   .more-info .info-img {
     text-align: right;
     animation: up-down 2s ease-in-out infinite alternate;
@@ -25826,7 +25827,8 @@ header.sticky {
           margin-top: 12px; } }
 
 .stars {
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  width: 100% !important; }
   .stars i {
     color: #FFB124;
     margin-right: 5px; }
