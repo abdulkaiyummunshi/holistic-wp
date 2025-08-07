@@ -24970,6 +24970,10 @@ header.sticky {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .elementor-4006 .elementor-element.elementor-element-f44d8d8 .more-info {
     padding: 20px 0px !important;
+    margin-top: 80px !important; }
+
+  .elementor-3873 .elementor-element.elementor-element-3e1953e .more-info {
+    padding: 20px 0px !important;
     margin-top: 80px !important; } }
 @media only screen and (min-width: 1025px) and (max-width: 1280px) {
   .nestmax-none {
@@ -25327,6 +25331,10 @@ header.sticky {
       -moz-transform: rotate(0deg);
       -ms-transform: rotate(0deg);
       -o-transform: rotate(0deg); }
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .elementor-3873 .elementor-element.elementor-element-1e7ff60 .section-title {
+    font-size: 33px; } }
 
 .footer {
   position: relative;
