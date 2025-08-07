@@ -24030,6 +24030,10 @@ header.sticky {
   justify-content: space-between;
   background-color: transparent;
   z-index: 9; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .header__wrapper {
+      padding-top: 10px;
+      padding-bottom: 10px !important; } }
   .header__wrapper .logo-wrapper .logo .sticky-logo {
     display: none; }
 
