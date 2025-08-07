@@ -28886,8 +28886,10 @@ ul.children {
   .listing-item-hc figure .service-tag h4 {
     margin: 0px !important; }
 
-.listing-container .ajax-listings-result {
-  background-color: g; }
+.listing-container .ajax-listings-result .text-center {
+  padding: 20px;
+  margin-top: 20px;
+  background-color: gray; }
 
 .list-view .listing-item-hc {
   gap: 10px !important; }
@@ -28962,6 +28964,9 @@ ul.children {
       color: #646464; }
     .listing_menu .nice-select .list {
       width: fit-content; }
+
+.advanced_contains .location_search input {
+  margin-bottom: 0px !important; }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .listing_details_area .row.style_1 {

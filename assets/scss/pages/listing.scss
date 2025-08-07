@@ -169,7 +169,12 @@
 }
 .listing-container{
     .ajax-listings-result{
-        background-color: green;
+        .text-center{
+            padding: 20px;
+            margin-top: 20px;
+            background-color: gray;
+            @include border-radius(10px);
+        }
     }
 }
 .list-view {
@@ -248,7 +253,13 @@
         }
     }
 }
-
+.advanced_contains {
+    .location_search{
+        input{
+            margin-bottom: 0px !important;
+        }
+    }
+}
 .listing_details_area{
     .row{
         &.style_1{
