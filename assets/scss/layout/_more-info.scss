@@ -78,7 +78,9 @@
   }
 
   .info-content{
-    width: 580px;
+    max-width: 580px;
+    width: 100%;
+
   }
   .info-img {
     text-align: right;

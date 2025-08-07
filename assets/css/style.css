@@ -24960,7 +24960,7 @@ header.sticky {
     margin-top: 25px;
     margin-bottom: 30px; }
   .more-info .info-content {
-    width: 580px; }
+    max-width: 580px; }
   .more-info .info-img {
     text-align: right;
     animation: up-down 2s ease-in-out infinite alternate;
