@@ -318,7 +318,6 @@
             .advanced_contains{
                 @include flex(column, flex-start, flex-start);
                 gap: 20px;
-                
             }
             input{
                 outline: none;
