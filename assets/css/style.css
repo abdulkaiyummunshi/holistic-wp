@@ -24600,9 +24600,9 @@ header.sticky {
   .listing_details_area .listing-item-content h4:hover {
     color: #00AF78; }
 
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .listing-item-hc-content .location {
-    margin-bottom: 0px !important; } }
+.listing-item-hc-content .location {
+  margin-bottom: 0px !important; }
+
 .find-holistice {
   margin-top: 150px; }
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
