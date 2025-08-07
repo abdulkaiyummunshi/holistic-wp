@@ -48,6 +48,10 @@
     .meta_info{
         @include flex(row, flex-start, center);
         gap: 30px;
+        flex-wrap: wrap;
+        @include sm{
+            gap: 10px !important;
+        }
         span{
             font-weight: 400;
             font-size: 21px;

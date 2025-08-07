@@ -24969,7 +24969,8 @@ header.sticky {
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .elementor-4006 .elementor-element.elementor-element-f44d8d8 .more-info {
-    padding: 20px 0px !important; } }
+    padding: 20px 0px !important;
+    margin-top: 80px !important; } }
 @media only screen and (min-width: 1025px) and (max-width: 1280px) {
   .nestmax-none {
     display: none; } }
@@ -25202,7 +25203,11 @@ header.sticky {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    gap: 30px; }
+    gap: 30px;
+    flex-wrap: wrap; }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .blog_news_area .meta_info {
+        gap: 10px !important; } }
     .blog_news_area .meta_info span {
       font-weight: 400;
       font-size: 21px;
