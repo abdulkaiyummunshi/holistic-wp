@@ -30312,33 +30312,34 @@ nav.main-menu li.active > a:hover {
       margin-right: 15px;
       color: #00AF78; }
 
-.no-results-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 50px 20px;
-  border-radius: 8px;
-  background-color: #fafafa;
-  margin: 20px auto;
-  width: 100%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); }
-  .no-results-container .no-results-icon {
-    margin-bottom: 20px; }
-    .no-results-container .no-results-icon .fas, .no-results-container .no-results-icon .far, .no-results-container .no-results-icon .fab {
-      font-size: 4rem;
-      color: #ccc; }
-  .no-results-container .no-results-text h2 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #555;
-    margin: 0 0 10px 0; }
-  .no-results-container .no-results-text p {
-    font-size: 1rem;
-    color: #888;
-    margin: 0;
-    line-height: 1.5; }
+.no_results_area {
+  padding: 0px 20px; }
+  .no_results_area .no_results_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 8px;
+    background-color: #fafafa;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); }
+    .no_results_area .no_results_container .no_results_icon {
+      margin-bottom: 20px; }
+      .no_results_area .no_results_container .no_results_icon .fas, .no_results_area .no_results_container .no_results_icon .far, .no_results_area .no_results_container .no_results_icon .fab {
+        font-size: 4rem;
+        color: #ccc; }
+    .no_results_area .no_results_container .no_results_text h2 {
+      font-size: 30px;
+      font-weight: 600;
+      color: #555;
+      margin: 0 0 10px 0; }
+    .no_results_area .no_results_container .no_results_text p {
+      font-size: 13px;
+      color: #888;
+      margin: 0;
+      line-height: 1.5; }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .send_message_area .row {
