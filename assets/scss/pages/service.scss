@@ -167,15 +167,14 @@ $background-color: #fafafa;
       text-align: center;
       padding: 50px 20px;
       border-radius: 8px;
-      background-color: $background-color;
+      background-color: #fafafa;
       width: 100%;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
       .no_results_icon {
         margin-bottom: 20px;
     
         .fas, .far, .fab { 
           font-size: 60px; 
-          color: $icon-color;
+          color: $primary;
         }
       }
     
@@ -183,13 +182,13 @@ $background-color: #fafafa;
         h2 {
           font-size: 30px;
           font-weight: 600;
-          color: $primary-text-color;
+          color: $black;
           margin: 0 0 10px 0;
         }
     
         p {
-          font-size: 13px;
-          color: $secondary-text-color;
+          font-size: 14px;
+          color: $text;
           margin: 0;
           line-height: 1.5;
         }

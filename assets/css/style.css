@@ -30323,21 +30323,20 @@ nav.main-menu li.active > a:hover {
     padding: 50px 20px;
     border-radius: 8px;
     background-color: #fafafa;
-    width: 100%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); }
+    width: 100%; }
     .no_results_area .no_results_container .no_results_icon {
       margin-bottom: 20px; }
       .no_results_area .no_results_container .no_results_icon .fas, .no_results_area .no_results_container .no_results_icon .far, .no_results_area .no_results_container .no_results_icon .fab {
         font-size: 60px;
-        color: #ccc; }
+        color: #00AF78; }
     .no_results_area .no_results_container .no_results_text h2 {
       font-size: 30px;
       font-weight: 600;
-      color: #555;
+      color: #111111;
       margin: 0 0 10px 0; }
     .no_results_area .no_results_container .no_results_text p {
-      font-size: 13px;
-      color: #888;
+      font-size: 14px;
+      color: #646464;
       margin: 0;
       line-height: 1.5; }
 
