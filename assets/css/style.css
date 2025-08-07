@@ -30328,7 +30328,7 @@ nav.main-menu li.active > a:hover {
     .no_results_area .no_results_container .no_results_icon {
       margin-bottom: 20px; }
       .no_results_area .no_results_container .no_results_icon .fas, .no_results_area .no_results_container .no_results_icon .far, .no_results_area .no_results_container .no_results_icon .fab {
-        font-size: 4rem;
+        font-size: 60px;
         color: #ccc; }
     .no_results_area .no_results_container .no_results_text h2 {
       font-size: 30px;
