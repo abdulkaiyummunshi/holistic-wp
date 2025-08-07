@@ -24032,7 +24032,7 @@ header.sticky {
   z-index: 9; }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     .header__wrapper {
-      padding-top: 10px;
+      padding-top: 10px !important;
       padding-bottom: 10px !important; } }
   .header__wrapper .logo-wrapper .logo .sticky-logo {
     display: none; }
@@ -24600,6 +24600,9 @@ header.sticky {
   .listing_details_area .listing-item-content h4:hover {
     color: #00AF78; }
 
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .listing-item-hc-content .location {
+    margin-bottom: 0px !important; } }
 .find-holistice {
   margin-top: 150px; }
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -25345,7 +25348,8 @@ header.sticky {
     padding: 247px 10px 80px 10px; }
     @media only screen and (min-width: 0px) and (max-width: 767px) {
       .footer .footer_area_quick_menu {
-        gap: 40px; } }
+        gap: 40px;
+        padding-top: 10px !important; } }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       .footer .footer_area_quick_menu {
         gap: 40px 0px; } }

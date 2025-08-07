@@ -302,3 +302,10 @@
         }
     }
 }
+
+
+@include sm{
+    .listing-item-hc-content .location {
+        margin-bottom: 0px !important;
+    }
+}
