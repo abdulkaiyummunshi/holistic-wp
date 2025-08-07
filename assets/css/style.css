@@ -28847,9 +28847,6 @@ ul.children {
 .listing_details_area_hc .sidebar .top_category ul li a {
   padding: 12px 30px !important; }
 
-.listing-item-hc-content .location {
-  margin-bottom: 0px !important; }
-
 .listing-item-hc-content {
   padding: 20px 15px 20px !important; }
   .listing-item-hc-content .title-stars {
@@ -28885,16 +28882,6 @@ ul.children {
   gap: 10px !important; }
   .listing-item-hc figure .service-tag h4 {
     margin: 0px !important; }
-
-.listing-container .ajax-listings-result .text-center {
-  padding: 20px;
-  margin-top: 20px;
-  background-color: gray;
-  border-radius: 10px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px; }
 
 .list-view .listing-item-hc {
   gap: 10px !important; }
@@ -28969,9 +28956,6 @@ ul.children {
       color: #646464; }
     .listing_menu .nice-select .list {
       width: fit-content; }
-
-.advanced_contains .location_search input {
-  margin-bottom: 0px !important; }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .listing_details_area .row.style_1 {
@@ -29060,6 +29044,8 @@ ul.children {
     font-weight: 400;
     font-size: 17px;
     color: #646464; }
+    .listing_details_area .sidebar .advanced_search input:focus {
+      border: none !important; }
     .listing_details_area .sidebar .advanced_search input::placeholder {
       font-weight: 400;
       font-size: 17px;
