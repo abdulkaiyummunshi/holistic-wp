@@ -24146,6 +24146,10 @@ header.sticky {
   .header__area.style_01 ul li:hover.has-dropdown::after {
     color: #00AF78 !important; }
 
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  #header {
+    padding-bottom: 7px !important;
+    padding-top: 6px !important; } }
 /*----------------------------------------*/
 /*  11. HERO CSS START
 /*----------------------------------------*/
@@ -30342,6 +30346,10 @@ nav.main-menu li.active > a:hover {
       color: #646464;
       margin: 0;
       line-height: 1.5; }
+
+.mc4wp-form-fields {
+  display: flex;
+  flex-wrap: wrap; }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .send_message_area .row {

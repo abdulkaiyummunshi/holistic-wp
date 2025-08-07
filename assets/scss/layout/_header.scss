@@ -216,3 +216,13 @@ header.sticky {
     }
   }
 }
+
+
+
+
+@include sm{
+  #header{
+    padding-bottom: 7px !important;
+    padding-top: 6px !important;
+  }
+}
